@@ -16,11 +16,11 @@ public class CheckSquareInArray {
         System.out.println("Enter number to check Square");
         int target = scanner1.nextInt();
         CheckSquareInArray checkSquareInArray = new CheckSquareInArray();
-        boolean result = CheckSquareInArray.existSqur(element,target);
+        boolean result = CheckSquareInArray.existSquare(element,target);
         System.out.println(result);
 
     }
-    public static boolean existSqur(int[] element , int target){
+    public static boolean existSquare(int[] element , int target){
         int square = target*target;
         for (int i = 0;i<element.length-1; i++){
             if(element[i]==square){
