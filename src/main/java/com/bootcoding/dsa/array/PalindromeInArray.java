@@ -21,10 +21,11 @@ public class PalindromeInArray {
 
         public static void isPalindrome(int[] numbers) {
 
-            int temp = numbers[0];
+          //  int temp = numbers[0];
             System.out.println("Palindrome Number");
             for (int i = 0; i < numbers.length; i++) {
                 int rem = 0;
+                int temp = numbers[i];
                 while (numbers[i] > 0) {
                     int div = numbers[i] / 10;
                     rem = rem * 10 + numbers[i] % 10;
