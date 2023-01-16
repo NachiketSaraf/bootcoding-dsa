@@ -7,7 +7,7 @@ public class ArmstrongInArray {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter array size ");
         int size = sc.nextInt();
-        int numbers[] = new int[size];
+        int[] numbers = new int[size];
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("Enter array element " + (i + 1));
             int number = sc.nextInt();
@@ -20,7 +20,7 @@ public class ArmstrongInArray {
         System.out.println("Aramstrong");
         for (int i = 0; i < numbers.length;i++){
             int temp = numbers[i];
-            int rem = 0;
+            int rem ;
             int sum = 0;
             while (numbers[i] != 0) {
                 int div = numbers[i] / 10;
@@ -34,4 +34,3 @@ public class ArmstrongInArray {
         }
     }
 }
-// prime, duplicate, squareOfElement
