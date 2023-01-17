@@ -10,7 +10,7 @@ public class RecursionEx1 {
             return;
         }
         print(n-1);
-        System.out.println(n);
+        System.out.println(n+1);
 
     }
 }
