@@ -1,5 +1,5 @@
 package com.bootcoding.dsa.recursion;
-
+//WAP to find the sum of digits of a number using recursion
 public class SumOfDigits {
     public static void main(String[] args) {
         int n = 123456;
