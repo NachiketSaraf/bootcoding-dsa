@@ -14,6 +14,6 @@ public class First50NaturalNumbers {
         }
 
         printNaturalNumber(num-1);
-        System.out.println(" "+num+" ");
+        System.out.print(num+" ");
     }
 }
