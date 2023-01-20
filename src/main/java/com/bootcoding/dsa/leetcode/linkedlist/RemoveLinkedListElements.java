@@ -5,28 +5,28 @@ import com.bootcoding.dsa.linkedlist.Node;
 
 public class RemoveLinkedListElements {
     public static void main(String[] args) {
-        ListNode firstnode = new ListNode(7);
-        ListNode secondnode = new ListNode(7);
-        ListNode thirdnode = new ListNode(7);
-//        ListNode forthnode = new ListNode(3);
-//        ListNode fifthnode = new ListNode(4);
-//        ListNode sixthnode = new ListNode(5);
-//        ListNode seventhnode = new ListNode(6);
+        ListNode firstnode = new ListNode(1);
+        ListNode secondnode = new ListNode(2);
+        ListNode thirdnode = new ListNode(6);
+        ListNode forthnode = new ListNode(3);
+        ListNode fifthnode = new ListNode(4);
+        ListNode sixthnode = new ListNode(5);
+        ListNode seventhnode = new ListNode(6);
 
 
 
         ListNode head = firstnode;
         firstnode.next = secondnode;
         secondnode.next = thirdnode;
-//        thirdnode.next = forthnode;
-//        forthnode.next = fifthnode;
-//        fifthnode.next= sixthnode;
-//        sixthnode.next= seventhnode;
-//        seventhnode.next = null;
-        int val= 7;
+        thirdnode.next = forthnode;
+        forthnode.next = fifthnode;
+        fifthnode.next= sixthnode;
+        sixthnode.next= seventhnode;
+        seventhnode.next = null;
+        int val= 6;
 //        ListNode h = removeElements(head,val);
-        printList(head);
-        ListNode h = removeElements2(head,val);
+//        printList(head);
+        ListNode h  = removeElements2(head,val);
         printList(h);
 
     }
