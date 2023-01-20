@@ -27,7 +27,7 @@ public class MiddleNode {
     public static ListNode middleNode(ListNode head) {
         ListNode temp = head;
         int nodeCounter = 0;
-        ListNode temp2 = head;
+
         int halfCounter;
 
         while (temp != null) {
@@ -35,11 +35,12 @@ public class MiddleNode {
             temp = temp.next;
         }
         halfCounter = (nodeCounter) / 2;
-
+        temp = head;
         for (int i = 0; i < halfCounter; i++) {
-            temp2 = temp2.next;
+            temp = temp.next;
         }
-        return temp2;
+        head = temp;
+        return head;
 
     }
 
