@@ -3,7 +3,7 @@ package com.bootcoding.dsa.recursion;
 public class fibonacci {
     public static void main(String[] args) {
     int a = 0, b=1 ;
-    int n =10;
+    int n =8;
         System.out.println(a);
         System.out.println(b);
     printFibonacci(a,b,n-2);
@@ -13,7 +13,7 @@ public class fibonacci {
         if(n==0){
             return;
         }
-        int c = a  + b;
+        int c = a + b;
         System.out.println(c);
         printFibonacci(b,c,n-1);
     }
