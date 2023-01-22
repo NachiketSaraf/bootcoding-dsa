@@ -30,7 +30,7 @@ public class Node {
 //        forthNode.next = null;
 //        return head;
 //    }
-//    //Printing lists of nodes
+    //Printing lists of nodes
 //    public static void printLinkedList(Node head)
 //    {
 //        Node temp = head;
