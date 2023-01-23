@@ -21,12 +21,22 @@ public class MiddleNode {
         thirdnode.next = forthnode;
         forthnode.next = fifthnode;
         fifthnode = null;
-       ListNode h= middleNode(head);
+       ListNode h= middleNodeTwoPointer(head);
        while (h!=null){
            System.out.println(h.val);
            h = h.next;
        }
 
+    }
+    public static ListNode middleNodeTwoPointer(ListNode head){
+        ListNode fast_ptr = head;
+        ListNode slow_ptr = head;
+
+        while (fast_ptr != null && fast_ptr.next != null){
+            fast_ptr = fast_ptr.next.next;
+            slow_ptr = slow_ptr.next;
+        }
+        return slow_ptr;
     }
 
     public static ListNode middleNode(ListNode head) {
