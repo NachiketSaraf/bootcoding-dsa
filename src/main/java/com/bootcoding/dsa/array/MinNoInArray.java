@@ -13,8 +13,10 @@ public class MinNoInArray {
             int number = sc.nextInt();
             numbers[i]=number;
         }
+        int m = minOfArray(numbers);
+        System.out.println(m);
     }
-    private static void minOfArray(int[] numbers){
+    private static int minOfArray(int[] numbers){
         System.out.println("Minimum");
         int min = numbers[0];
         for (int i = 0;i<numbers.length;i++){
@@ -22,6 +24,6 @@ public class MinNoInArray {
                 min = numbers[i];
             }
         }
-        System.out.println(min);
+        return min;
     }
 }
