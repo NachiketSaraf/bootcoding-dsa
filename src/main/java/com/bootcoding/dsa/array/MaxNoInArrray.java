@@ -13,9 +13,10 @@ public class MaxNoInArrray {
             int number = sc.nextInt();
             numbers[i]=number;
         }
-        maxOfArray(numbers);
+       int m = maxOfArray(numbers);
+        System.out.println(m);
     }
-    private static void maxOfArray(int[] numbers){
+    private static int maxOfArray(int[] numbers){
         System.out.println("Maximum");
         int max = 0;
         for (int i = 0;i<numbers.length;i++){
@@ -23,6 +24,6 @@ public class MaxNoInArrray {
                 max = numbers[i];
             }
         }
-        System.out.println(max);
+        return max;
     }
 }
