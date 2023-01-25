@@ -10,12 +10,14 @@ public class Fibonacci {
         System.out.println(fibMemoization(2));
 
     }
+    // Using Normal recursion
     public static int fib(int n ){
         if (n==0 || n==1){
             return n;
         }
         return fib(n-1)+fib(n-2);
     }
+    // Using Memoization
     public static int fibMemoization(int n){
             if(n==0 || n==1){
                 return n;
