@@ -1,4 +1,4 @@
-package com.bootcoding.dsa.hastable;
+package com.bootcoding.dsa.leetcode.hashtable;
 
 import java.util.HashMap;
 
