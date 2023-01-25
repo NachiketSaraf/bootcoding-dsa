@@ -3,9 +3,7 @@ package com.bootcoding.dsa.array;
 public class ReturnNegative {
     public static void main(String[] args) {
         int[] nums = {1, -2, 3, -4};
-
         int[] neg = findNegativeElements(nums);
-
         System.out.println("Negative Array");
         for (int i = 0; i < neg.length; i++) {
             System.out.println(neg[i]);
