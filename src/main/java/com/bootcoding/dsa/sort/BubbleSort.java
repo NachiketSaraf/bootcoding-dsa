@@ -1,4 +1,4 @@
-package com.bootcoding.dsa.array.sort;
+package com.bootcoding.dsa.sort;
 
 public class BubbleSort {
     public static void main(String[] args) {
