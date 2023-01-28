@@ -7,9 +7,11 @@ public class BinarySearch {
         int index = search(array,x);
         System.out.println(index);
     }
-public static int search(int[] nums, int target) {
-    return binarySearch( nums, target , 0, nums.length-1);
-}
+    public static int search(int[] nums, int target) {
+
+        return binarySearch( nums, target , 0, nums.length-1);
+
+   }
     private static int binarySearch(int[] array, int x,int left,int right ){
         int mid = (left+right)/2;
         if(x==array[mid]){
