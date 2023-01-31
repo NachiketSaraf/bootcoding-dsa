@@ -1,15 +1,50 @@
 package com.bootcoding.dsa.leetcode.search;
 
-import java.util.ArrayList;
-
 public class KthMissingPositiveNumber {
     public static void main(String[] args) {
         int[] arr = {1,2};
-        System.out.println(findKthPositive(arr,1));
+        System.out.println(findKthPositive(arr, 1));
     }
+
     public static int findKthPositive(int[] arr, int k) {
+        int misPos = 1;
+        int i = 0;
+        while (true) {
+            if (misPos == arr[i]) {
+                i++;
+
+            } else {
+
+                --k;
+                if(k == 0){
+                    return misPos;
+                }
+            }
+
+            misPos++;
+            if(i == arr.length){
+                --i;
+            }
+
+        }
 
     }
+
+
+ /*
+        misPos = 1;
+        k = 3;
+        search for misPos in array
+            if not found
+            k-- ;
+            misPos++ ;
+            else
+            misPos++ ;
+            if k == 0 ;
+            return misPos;
+         */
+
+
 //     return binarySearch(arr,k,1,0,arr.length-1);
 //    public static int binarySearch(int a[] ,int x ,int i,int left, int right){
 //        int mid = (left + right) /2;
