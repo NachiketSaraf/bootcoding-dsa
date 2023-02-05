@@ -1,4 +1,4 @@
 package com.bootcoding.dsa.binarytree;
 
-public class OfTheTree {
+public class LevelOfTheTree {
 }
