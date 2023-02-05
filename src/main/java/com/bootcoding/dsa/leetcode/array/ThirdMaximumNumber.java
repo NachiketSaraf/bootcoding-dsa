@@ -8,32 +8,35 @@ public class ThirdMaximumNumber {
         System.out.println(thirdMax(nums));
     } public static int thirdMax(int[] nums) {
 
-        int firstMax = 0;
-        int secondMax = 0;
-        int thirdMax = 0;
+        Integer firstMax = null;
+        Integer secondMax = null;
+        Integer thirdMax = null;
         if (nums.length==1){
-            thirdMax=nums[1];
+            thirdMax=nums[0];
         }
-        for (int i = 0; i < nums.length; i++){
+        for (Integer n : nums){
 
-            if(firstMax==nums[i]||secondMax==nums[i]||thirdMax==nums[i]){
+            if(n.equals(firstMax)||n.equals(secondMax)||n.equals(secondMax)){
                 continue;
             }
-            if (firstMax == 0) {
-                firstMax = nums[i];
-            } else if (secondMax == 0) {
-                secondMax = nums[i];
-            } else if (thirdMax == 0) {
-                thirdMax = nums[i];
+            if (firstMax == null || n>firstMax) {
+                thirdMax = secondMax;
+                secondMax = firstMax;
+                firstMax = n;
+            } else if (secondMax == null || n>secondMax) {
+                thirdMax = secondMax;
+                secondMax = n;
+
+            } else if (thirdMax == null || n>thirdMax) {
+                thirdMax = n;
                 break;
             }
         }
-        if (thirdMax == 0) {
-            thirdMax = secondMax;
+        if (thirdMax == null) {
+            return firstMax;
         }
         return thirdMax;
     }
-
 }
 
 
