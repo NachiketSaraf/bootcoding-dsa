@@ -17,7 +17,7 @@ public class NextGreaterElement {
         Stack<Integer> stack = new Stack();
 
         for (int i = 2*n-1; i >0 ; i--){
-            while ((stack.isEmpty() == false) && stack.peek() <= arr[i % n]){
+            while ((!stack.isEmpty()) && stack.peek() <= arr[i % n]){
                 stack.pop();
             }
             if(i<n){
