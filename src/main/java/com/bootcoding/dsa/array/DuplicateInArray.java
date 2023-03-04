@@ -3,7 +3,7 @@ package com.bootcoding.dsa.array;
 public class DuplicateInArray {
     public static void main(String[] args) {
 
-        int[] num = {1,2, 7,2,9,0,1,5,9};
+        int[] num = {1,2,7,2,9,0,1,5,9};
 
         printDuplicate(num);
     }
