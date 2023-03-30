@@ -25,14 +25,17 @@ public class PalindromeLinkedList {
         //if the linked list is null or have only single element
         if (head==null || head.next==null) return true;
 
+        //find middle of linked list
         while (fast.next != null && fast.next.next != null ){
             slow=slow.next;
             fast=fast.next.next;
         }
 
+        //reverse the right half
         slow.next=reverseList(slow.next);
         slow=slow.next;
 
+        //check the left half with right half equal or not
         while (slow!=null){
             if (current.val != slow.val) return false;
             current=current.next;
@@ -40,6 +43,8 @@ public class PalindromeLinkedList {
         }
         return true;
     }
+
+    //method for reversing linkedlist
     public static ListNode reverseList(ListNode head) {
         ListNode current = head;
         ListNode next = null;
