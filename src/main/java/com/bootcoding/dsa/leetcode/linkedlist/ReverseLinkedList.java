@@ -8,9 +8,9 @@ public class ReverseLinkedList {
         ListNode forthnode = new ListNode(4);
         ListNode fifthnode = new ListNode(5);
         ListNode sixthnode = new ListNode(6);
-        ListNode seventhnode = new ListNode(7);
-        ListNode eighthnode = new ListNode(8);
-        ListNode ninthnode = new ListNode(9);
+//        ListNode seventhnode = new ListNode(7);
+//        ListNode eighthnode = new ListNode(8);
+//        ListNode ninthnode = new ListNode(9);
 
 
         ListNode head = firstnode;
