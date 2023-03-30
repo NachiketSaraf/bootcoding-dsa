@@ -22,6 +22,7 @@ public class PalindromeLinkedList {
         ListNode slow = head;
         ListNode fast = head;
 
+        //if the linked list is null or have only single element
         if (head==null || head.next==null) return true;
 
         while (fast.next != null && fast.next.next != null ){
@@ -51,7 +52,6 @@ public class PalindromeLinkedList {
             current = next;
         }
         return prev;
-
     }
 
 
