@@ -8,13 +8,13 @@ public class PalindromeLinkedList {
         ListNode secondnode = new ListNode(2);
         ListNode thirdnode = new ListNode(2);
         ListNode forthnode = new ListNode(1);
-       // ListNode fifthnode = new ListNode(1);
+        ListNode fifthnode = new ListNode(1);
 
         ListNode head = firstnode;
         firstnode.next = secondnode;
         secondnode.next = thirdnode;
         thirdnode.next = forthnode;
-        //forthnode.next = fifthnode;
+        forthnode.next = fifthnode;
         System.out.println(isPalindrome(head));
     }
     public static boolean isPalindrome(ListNode head) {
