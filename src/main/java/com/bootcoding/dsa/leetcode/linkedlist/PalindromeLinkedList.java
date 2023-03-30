@@ -12,10 +12,10 @@ public class PalindromeLinkedList {
 
         ListNode head = firstnode;
         firstnode.next = secondnode;
-//        secondnode.next = thirdnode;
-//        thirdnode.next = forthnode;
-//        forthnode.next = fifthnode;
-//        fifthnode = null;
+        secondnode.next = thirdnode;
+        thirdnode.next = forthnode;
+        forthnode.next = fifthnode;
+        fifthnode.next = null;
         System.out.println(isPalindrome(head));
     }
     public static boolean isPalindrome(ListNode head) {
