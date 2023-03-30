@@ -6,19 +6,41 @@ public class PalindromeLinkedList {
     public static void main(String[] args) {
         ListNode firstnode = new ListNode(1);
         ListNode secondnode = new ListNode(2);
-        ListNode thirdnode = new ListNode(2);
-        ListNode forthnode = new ListNode(1);
-//        ListNode fifthnode = new ListNode(5);
+        ListNode thirdnode = new ListNode(3);
+        ListNode forthnode = new ListNode(2);
+        ListNode fifthnode = new ListNode(5);
 
         ListNode head = firstnode;
         firstnode.next = secondnode;
-        secondnode.next = thirdnode;
-        thirdnode.next = forthnode;
+//        secondnode.next = thirdnode;
+//        thirdnode.next = forthnode;
 //        forthnode.next = fifthnode;
 //        fifthnode = null;
-        boolean n = isPalindrome(head);
+        System.out.println(isPalindrome(head));
     }
     public static boolean isPalindrome(ListNode head) {
+        ListNode current = head;
+        ListNode slow = head;
+        ListNode fast = head;
+
+        if (head==null || head.next==null) return true;
+
+        while (fast.next != null && fast.next.next != null ){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+
+        slow.next=reverseList(slow.next);
+        slow=slow.next;
+
+        while (slow!=null){
+            if (current.val != slow.val) return false;
+            current=current.next;
+            slow=slow.next;
+        }
+        return true;
+    }
+    public static ListNode reverseList(ListNode head) {
         ListNode current = head;
         ListNode next = null;
         ListNode prev = null;
@@ -29,19 +51,9 @@ public class PalindromeLinkedList {
             prev = current;
             current = next;
         }
+        return prev;
 
-        ListNode temp = head;
-
-        while (temp!=null){
-            while (prev!=null){
-                if (temp.val==prev.val){
-                    temp=temp.next;
-                    prev= prev.next;
-                }
-            }
-            return true;
-        }
-        return false;
     }
+
 
 }
