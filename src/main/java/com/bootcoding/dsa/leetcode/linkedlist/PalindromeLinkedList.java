@@ -1,7 +1,5 @@
 package com.bootcoding.dsa.leetcode.linkedlist;
 
-import com.bootcoding.dsa.linkedlist.Node;
-
 public class PalindromeLinkedList {
     public static void main(String[] args) {
         ListNode firstnode = new ListNode(1);
@@ -10,12 +8,11 @@ public class PalindromeLinkedList {
         ListNode forthnode = new ListNode(1);
         ListNode fifthnode = new ListNode(1);
 
-        ListNode head = firstnode;
         firstnode.next = secondnode;
         secondnode.next = thirdnode;
         thirdnode.next = forthnode;
         forthnode.next = fifthnode;
-        System.out.println(isPalindrome(head));
+        System.out.println(isPalindrome(firstnode));
     }
     public static boolean isPalindrome(ListNode head) {
         ListNode current = head;
