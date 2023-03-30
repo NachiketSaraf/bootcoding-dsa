@@ -15,7 +15,6 @@ public class PalindromeLinkedList {
         secondnode.next = thirdnode;
         thirdnode.next = forthnode;
         forthnode.next = fifthnode;
-        fifthnode.next = null;
         System.out.println(isPalindrome(head));
     }
     public static boolean isPalindrome(ListNode head) {
