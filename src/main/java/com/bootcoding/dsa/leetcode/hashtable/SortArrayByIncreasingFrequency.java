@@ -11,6 +11,7 @@ public class SortArrayByIncreasingFrequency {
         int[] output = frequencySort(nums);
     }
     public static int[] frequencySort(int[] nums) {
+
         int[] res = new int[nums.length];
         Map<Integer,Integer> frequency = new HashMap<>();
         for (int i = 0 ; i < nums.length;i++){
