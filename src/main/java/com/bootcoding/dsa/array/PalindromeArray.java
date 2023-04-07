@@ -2,7 +2,6 @@ package com.bootcoding.dsa.array;
 
 public class PalindromeArray {
     public static void main(String[] args) {
-
         System.out.println(checkPalindrome(new int[]{11,2,2,1,1}));
     }
     public static String checkPalindrome(int[] arr){
