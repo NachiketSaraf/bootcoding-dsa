@@ -1,4 +1,4 @@
-package com.bootcoding.dsa.leetcode.string;
+package com.bootcoding.dsa.leetcode.stack;
 
 import java.util.Stack;
 
