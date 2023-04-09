@@ -30,8 +30,8 @@ public class MergeToSortedArray {
            return ((p + q) / 2);
        }
        else{
-          double s = c[o];
-           return s ;
+//          double s = ;
+           return c[o] ;
        }
     }
 }
