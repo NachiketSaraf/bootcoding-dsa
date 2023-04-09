@@ -20,14 +20,14 @@ public class MergeToSortedArray {
                c[i]=b[j++];
            }
        }
+
         Arrays.sort(c);
        int m = c.length;
        int o = m/2;
        if (m%2==0){
            double p= c[o];
            double q = c[o-1];
-           double r=((p + q) / 2);
-           return r;
+           return ((p + q) / 2);
        }
        else{
           double s = c[o];
