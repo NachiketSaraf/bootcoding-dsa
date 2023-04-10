@@ -9,6 +9,7 @@ public class ShuffleArray {
 
     }
 
+
     public static int[] shuffle(int[] nums, int n) {
         int[] ans = new int[nums.length];
         for (int i = 0; i < n; i++) {
