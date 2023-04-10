@@ -1,11 +1,11 @@
 package com.bootcoding.dsa.leetcode.array;
 
+import java.util.Arrays;
+
 public class ShuffleArray {
     public static void main(String[] args) {
         int[] res = shuffle(new int[]{2, 5, 1, 3, 4, 7}, 3);
-        for (int re : res) {
-            System.out.println(re);
-        }
+        Arrays.stream(res).forEach(System.out::println);
     }
     public static int[] shuffle(int[] nums, int n) {
         int[] result = new int[nums.length];
