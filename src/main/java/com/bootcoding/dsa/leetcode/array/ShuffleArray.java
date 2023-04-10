@@ -3,8 +3,8 @@ package com.bootcoding.dsa.leetcode.array;
 public class ShuffleArray {
     public static void main(String[] args) {
         int[] res = shuffle(new int[]{2, 5, 1, 3, 4, 7}, 3);
-        for (int i = 0; i < res.length; i++) {
-            System.out.println(res[i]);
+        for (int k = 0; k < res.length; k++) {
+            System.out.println(res[k]);
         }
     }
     public static int[] shuffle(int[] nums, int n) {
