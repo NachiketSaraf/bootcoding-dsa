@@ -18,6 +18,7 @@ public class ShuffleArray {
         return ans;
     }
 }
+// My approach
 //    int x = 0;
 //    int y =n;
 //    int flag =0;
