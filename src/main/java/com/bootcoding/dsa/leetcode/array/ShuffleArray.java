@@ -6,7 +6,6 @@ public class ShuffleArray {
         for (int i = 0; i < ans.length; i++) {
             System.out.println(ans[i]);
         }
-
     }
     public static int[] shuffle(int[] nums, int n) {
         int[] ans = new int[nums.length];
