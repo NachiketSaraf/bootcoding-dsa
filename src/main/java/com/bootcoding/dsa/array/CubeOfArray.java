@@ -9,7 +9,8 @@ public class CubeOfArray {
         }
 
         CubeOfArray cubeOfArray = new CubeOfArray();
-    }public static int[] Cube(int[] array){
+    }
+    public static int[] Cube(int[] array){
         int[] cube = new int[array.length];
         for (int i = 0; i<array.length;i++){
             cube[i] = array[i]*array[i]*array[i];
