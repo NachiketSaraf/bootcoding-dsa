@@ -12,6 +12,5 @@ public class SeperateYearMonthDay {
         System.out.println("Year"+year);
         System.out.println("Month"+month);
         System.out.println("Day"+day);
-
     }
 }
