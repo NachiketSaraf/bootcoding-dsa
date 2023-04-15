@@ -2,7 +2,8 @@ package com.bootcoding.dsa.string;
 
 public class StringModification {
     public static void main(String[] args) {
-        String s ="";
+        String s =null;
+        System.out.println(s);
         int n = 5;
         StringBuilder sb = new StringBuilder();
         sb.append("rollNO");
@@ -10,10 +11,7 @@ public class StringModification {
         sb.append("cse");
         sb.append(",");
         sb.append("sub1");
-
-
-
-            sb.append(",");
+        sb.append(",");
         sb.append("sub2");
         sb.append(",");
         sb.append("sub3");
