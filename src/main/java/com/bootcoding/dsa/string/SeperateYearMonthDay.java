@@ -10,7 +10,7 @@ public class SeperateYearMonthDay {
         String month = split[1];
         String day = split[2];
         System.out.println("Year "+year);
-        System.out.println("Month"+month);
+        System.out.println("Month "+month);
         System.out.println("Day"+day);
     }
 }
