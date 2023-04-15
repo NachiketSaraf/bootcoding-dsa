@@ -7,7 +7,7 @@ public class SeperateYearMonthDay {
         doTask("2023-04-15");
     }
     public static void doTask(String date){
-        String[] split = date.split("-");
+        var split = date.split("-");
         String year = split[0];
         String month = split[1];
         String day = split[2];
