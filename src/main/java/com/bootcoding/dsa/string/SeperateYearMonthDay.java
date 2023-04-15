@@ -11,6 +11,6 @@ public class SeperateYearMonthDay {
         String day = split[2];
         System.out.println("Year "+year);
         System.out.println("Month "+month);
-        System.out.println("Day"+day);
+        System.out.println("Day "+day);
     }
 }
