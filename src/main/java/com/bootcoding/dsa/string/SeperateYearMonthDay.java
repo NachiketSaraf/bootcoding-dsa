@@ -3,7 +3,6 @@ package com.bootcoding.dsa.string;
 public class SeperateYearMonthDay {
     public static void main(String[] args) {
         doTask("2023-04-15");
-
     }
     public static void doTask(String date){
         String[] split = date.split("-");
