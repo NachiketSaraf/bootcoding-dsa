@@ -8,6 +8,7 @@ public class CheckIfTwoStringArraysAreEquivalent {
     }
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         if (word1==null || word2==null) return false;
+
         String word1Sum ="";
         String word2Sum ="";
         for (int i = 0; i < word1.length ; i++) {
