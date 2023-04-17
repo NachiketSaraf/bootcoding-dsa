@@ -10,16 +10,16 @@ public class CheckIfTwoStringArraysAreEquivalent {
         if (word1==null || word2==null) return false;
 
         StringBuilder word1Sum = new StringBuilder();
-        String word2Sum ="";
+        StringBuilder word2Sum = new StringBuilder();
 
         for (String s : word1) {
             word1Sum.append(s);
         }
 
         for (String s : word2) {
-            word2Sum += s;
+            word2Sum.append(s);
         }
 
-        return word1Sum.toString().equals(word2Sum);
+        return word1Sum.toString().equals(word2Sum.toString());
     }
 }
