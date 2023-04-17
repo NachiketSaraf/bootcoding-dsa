@@ -16,8 +16,8 @@ public class CheckIfTwoStringArraysAreEquivalent {
             word1Sum += s;
         }
 
-        for (int i = 0; i < word2.length ; i++) {
-            word2Sum += word2[i];
+        for (String s : word2) {
+            word2Sum += s;
         }
 
         return word1Sum.equals(word2Sum);
