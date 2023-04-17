@@ -12,9 +12,7 @@ public class CheckIfTwoStringArraysAreEquivalent {
         StringBuilder word1Sum = new StringBuilder();
         StringBuilder word2Sum = new StringBuilder();
 
-        for (String s : word1) {
-            word1Sum.append(s);
-        }
+        for (String s : word1) word1Sum.append(s);
 
         for (String s : word2) word2Sum.append(s);
 
