@@ -9,17 +9,17 @@ public class CheckIfTwoStringArraysAreEquivalent {
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         if (word1==null || word2==null) return false;
 
-        String word1Sum ="";
+        StringBuilder word1Sum = new StringBuilder();
         String word2Sum ="";
 
         for (String s : word1) {
-            word1Sum += s;
+            word1Sum.append(s);
         }
 
         for (String s : word2) {
             word2Sum += s;
         }
 
-        return word1Sum.equals(word2Sum);
+        return word1Sum.toString().equals(word2Sum);
     }
 }
