@@ -19,6 +19,7 @@ public class CheckIfTwoStringArraysAreEquivalent {
         for (int i = 0; i < word2.length ; i++) {
             word2Sum += word2[i];
         }
+
         return word1Sum.equals(word2Sum);
     }
 }
