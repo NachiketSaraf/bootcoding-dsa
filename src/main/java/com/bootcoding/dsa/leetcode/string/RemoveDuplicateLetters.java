@@ -9,6 +9,7 @@ public class RemoveDuplicateLetters {
     }
     public static String removeDuplicateLetters(String s) {
         StringBuilder sb = new StringBuilder();
+
         LinkedHashSet<Character> set =new LinkedHashSet();
         Stack stack =new Stack();
         for (int i = 0; i < s.length(); i++) {
