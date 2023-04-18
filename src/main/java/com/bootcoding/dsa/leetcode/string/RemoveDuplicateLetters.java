@@ -4,13 +4,13 @@ import java.util.*;
 
 public class RemoveDuplicateLetters {
     public static void main(String[] args) {
-        String s = "bcabc";
+        String s = "bcdbc";
         System.out.println(removeDuplicateLetters(s));
     }
     public static String removeDuplicateLetters(String s) {
         StringBuilder sb = new StringBuilder();
 
-        LinkedHashSet<Character> set =new LinkedHashSet();
+        HashSet<Character> set =new LinkedHashSet();
 
         for (int i = 0; i < s.length(); i++) {
             if (!set.contains(s.charAt(i))){
