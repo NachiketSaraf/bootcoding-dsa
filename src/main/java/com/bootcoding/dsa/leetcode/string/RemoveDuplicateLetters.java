@@ -11,6 +11,7 @@ public class RemoveDuplicateLetters {
         StringBuilder sb = new StringBuilder();
 
         LinkedHashSet<Character> set =new LinkedHashSet();
+
         Stack stack =new Stack();
         for (int i = 0; i < s.length(); i++) {
             if (!set.contains(s.charAt(i))){
