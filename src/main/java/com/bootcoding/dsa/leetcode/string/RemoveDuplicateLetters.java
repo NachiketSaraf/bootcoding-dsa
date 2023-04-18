@@ -21,6 +21,7 @@ public class RemoveDuplicateLetters {
         for (char ch: set){
             sb.append(ch);
         }
+
         return sb.toString();
     }
 }
