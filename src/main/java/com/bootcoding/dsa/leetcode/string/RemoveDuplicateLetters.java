@@ -10,7 +10,7 @@ public class RemoveDuplicateLetters {
     public static String removeDuplicateLetters(String s) {
         StringBuilder sb = new StringBuilder();
 
-        HashSet<Character> set =new LinkedHashSet();
+        HashSet<Character> set =new HashSet();
 
         for (int i = 0; i < s.length(); i++) {
             if (!set.contains(s.charAt(i))){
