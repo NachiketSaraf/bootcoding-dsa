@@ -13,9 +13,9 @@ public class CopyEven {
         for (int j : arr) if (j % 2 == 0) c++;
         int[] res = new int[c];
         int index= 0;
-        for (int i=0;i< arr.length ;i++){
-            if(arr[i]%2==0){
-                res[index] = arr[i];
+        for (int j : arr) {
+            if (j % 2 == 0) {
+                res[index] = j;
                 index++;
             }
         }
