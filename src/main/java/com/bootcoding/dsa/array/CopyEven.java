@@ -1,8 +1,5 @@
 package com.bootcoding.dsa.array;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CopyEven {
     public static void main(String[] args) {
         int[] arr = {14,35,66,75,92,3,5,8,7,9};
