@@ -10,10 +10,12 @@ public class CopyEven {
     }
     private static int[] copyEvenInNewArray(int[] arr) {
         int c =0;
-        for (int j : arr)
-            if (j % 2 == 0) {
-                c++;
+        for (int j : arr) {
+            if (j % 2 != 0) {
+                continue;
             }
+            c++;
+        }
         int[] res = new int[c];
         int index= 0;
         for (int i=0;i< arr.length ;i++){
