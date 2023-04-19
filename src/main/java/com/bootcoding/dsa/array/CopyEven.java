@@ -4,8 +4,8 @@ public class CopyEven {
     public static void main(String[] args) {
         int[] arr = {14,35,66,75,92,3,5,8,7,9};
         int[] res = copyEvenInNewArray(arr);
-        for (int i = 0; i< res.length;i++){
-            System.out.println(res[i]);
+        for (int re : res) {
+            System.out.println(re);
         }
 
     }
