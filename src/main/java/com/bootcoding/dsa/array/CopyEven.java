@@ -7,7 +7,6 @@ public class CopyEven {
         int[] arr = {14,35,66,75,92,3,5,8,7,9};
         int[] res = copyEvenInNewArray(arr);
         for (int re : res) System.out.println(re);
-
     }
 
     private static int[] copyEvenInNewArray(int[] arr) {
