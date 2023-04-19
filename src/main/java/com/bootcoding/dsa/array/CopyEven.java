@@ -8,11 +8,10 @@ public class CopyEven {
         int[] res = copyEvenInNewArray(arr);
         Arrays.stream(res).forEach(System.out::println);
     }
-
     private static int[] copyEvenInNewArray(int[] arr) {
         int c =0;
-        for (int i =0;i<arr.length;i++){
-            if (arr[i]%2==0){
+        for (int j : arr) {
+            if (j % 2 == 0) {
                 c++;
             }
         }
