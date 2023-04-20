@@ -10,8 +10,7 @@ public class CubeOfArray {
     }
     public static int[] Cube(int[] array){
 
-        int[] array1 = Arrays.stream(array).map(j -> j * j * j).toArray();
-        return array1;
+        return Arrays.stream(array).map(j -> j * j * j).toArray();
 
     }
 }
