@@ -11,5 +11,6 @@ public class CubeOfArray {
     public static int[] Cube(int[] array){
 
         return Arrays.stream(array).map(j -> j * j * j).toArray();
+
     }
 }
