@@ -1,5 +1,7 @@
 package com.bootcoding.dsa.array;
 
+import java.util.Arrays;
+
 public class CubeOfArray {
     public static void main(String[] args) {
         int[] array = {1,2,-3};
@@ -9,10 +11,7 @@ public class CubeOfArray {
         }
     }
     public static int[] Cube(int[] array){
-        int[] cube = new int[array.length];
-        for (int i = 0; i<array.length;i++){
-            cube[i] = array[i]*array[i]*array[i];
-        }
+        int[] cube = Arrays.stream(array).map(j -> j * j * j).toArray();
         return cube;
     }
 }
