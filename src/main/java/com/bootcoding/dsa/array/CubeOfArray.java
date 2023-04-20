@@ -9,7 +9,6 @@ public class CubeOfArray {
         for (int j : cube) System.out.println(j);
     }
     public static int[] Cube(int[] array){
-        int[] cube = Arrays.stream(array).map(j -> j * j * j).toArray();
-        return cube;
+        return Arrays.stream(array).map(j -> j * j * j).toArray();
     }
 }
