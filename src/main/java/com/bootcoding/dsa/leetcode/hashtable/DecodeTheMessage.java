@@ -2,6 +2,7 @@ package com.bootcoding.dsa.leetcode.hashtable;
 
 
 import java.util.HashMap;
+import java.util.stream.IntStream;
 
 public class DecodeTheMessage {
     public static void main(String[] args) {
@@ -19,14 +20,13 @@ public class DecodeTheMessage {
                 code.put(key.charAt(i), original++);
             }
         }
-        for (int i =0 ; i<message.length();i++) {
-            if (code.containsKey(message.charAt(i))){
+        IntStream.range(0, message.length()).forEach(i -> {
+            if (code.containsKey(message.charAt(i))) {
                 sb.append(code.get(message.charAt(i)));
-            }
-            else {
+            } else {
                 sb.append(message.charAt(i));
             }
-        }
+        });
         return sb.toString();
     }
 }
