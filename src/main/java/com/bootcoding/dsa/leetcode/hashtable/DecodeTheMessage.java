@@ -1,6 +1,5 @@
 package com.bootcoding.dsa.leetcode.hashtable;
 
-
 import java.util.HashMap;
 
 public class DecodeTheMessage {
