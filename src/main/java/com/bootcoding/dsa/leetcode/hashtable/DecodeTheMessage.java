@@ -19,12 +19,13 @@ public class DecodeTheMessage {
                 code.put(key.charAt(i), original++);
             }
         }
-        for (int i =0 ; i<message.length();i++)
+        for (int i =0 ; i<message.length();i++) {
             if (code.containsKey(message.charAt(i))) {
                 sb.append(code.get(message.charAt(i)));
             } else {
                 sb.append(message.charAt(i));
             }
+        }
         return sb.toString();
     }
 }
