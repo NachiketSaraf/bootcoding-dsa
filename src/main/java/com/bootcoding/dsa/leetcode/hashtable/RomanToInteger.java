@@ -16,12 +16,12 @@ public class RomanToInteger {
         roman.put('D',500);
         roman.put('M',1000);
 
-        int sum =roman.get(s.charAt(s.length()-1));
+        int res =roman.get(s.charAt(s.length()-1));
 
         for (int i = s.length()-2; i >= 0;i--){
-            if(roman.get(s.charAt(i))<roman.get(s.charAt(i+1))) sum -= roman.get(s.charAt(i));
-            else sum += roman.get(s.charAt(i));
+            if(roman.get(s.charAt(i))<roman.get(s.charAt(i+1))) res -= roman.get(s.charAt(i));
+            else res += roman.get(s.charAt(i));
         }
-        return sum;
+        return res;
     }
 }
