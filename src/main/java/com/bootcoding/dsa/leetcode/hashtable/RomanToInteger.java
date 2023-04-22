@@ -20,9 +20,7 @@ public class RomanToInteger {
         for (int i = s.length()-2; i >= 0;i--){
             if(roman.get(s.charAt(i))<roman.get(s.charAt(i+1))){
                 sum -= roman.get(s.charAt(i));
-            }else{
-                sum += roman.get(s.charAt(i));
-            }
+            }else sum += roman.get(s.charAt(i));
         }
         return sum;
     }
