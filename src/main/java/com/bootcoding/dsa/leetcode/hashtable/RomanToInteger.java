@@ -15,6 +15,7 @@ public class RomanToInteger {
         roman.put('C',100);
         roman.put('D',500);
         roman.put('M',1000);
+
         int sum =roman.get(s.charAt(s.length()-1));
 
         for (int i = s.length()-2; i >= 0;i--){
