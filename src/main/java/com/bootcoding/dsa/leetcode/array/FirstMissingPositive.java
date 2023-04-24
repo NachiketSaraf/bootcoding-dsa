@@ -17,9 +17,7 @@ public class FirstMissingPositive {
 
         }
         for (int j = 1; j < check.length; j++) {
-            if (check[j]==0){
-                return j;
-            }
+            if (check[j]==0) return j;
         }
         return 1;
     }
