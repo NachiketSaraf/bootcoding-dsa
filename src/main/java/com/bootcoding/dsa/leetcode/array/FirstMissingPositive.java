@@ -10,10 +10,7 @@ public class FirstMissingPositive {
     public static int firstMissingPositive(int[] nums) {
         Arrays.sort(nums);
         int[] check;
-        if (nums.length <= nums[nums.length-1]+1){
-             check = new int[nums.length+1];
-
-        }
+        if (nums.length <= nums[nums.length-1]+1) check = new int[nums.length + 1];
         else {
              check = new int[nums[nums.length - 1] + 1];
         }
