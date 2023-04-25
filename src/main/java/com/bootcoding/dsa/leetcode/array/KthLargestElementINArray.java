@@ -10,7 +10,7 @@ public class KthLargestElementINArray {
     public static int findKthLargest(int[] nums, int k) {
         Arrays.sort(nums);
         int n = nums[nums.length - k];
-        return n;
+        return nums[nums.length - k];
     }
 
 }
