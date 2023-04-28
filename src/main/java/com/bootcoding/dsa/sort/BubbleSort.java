@@ -3,7 +3,7 @@ package com.bootcoding.dsa.sort;
 public class BubbleSort {
     public static void main(String[] args) {
         int[] numbers= {50,17,19,14,5};
-        int[] s = sortBubble(numbers);
+        int[] s = sortBubble(new int[]{50,17,19,14,5});
         for(int i = 0; i < s.length;i++){
             System.out.println(s[i]);
         }
