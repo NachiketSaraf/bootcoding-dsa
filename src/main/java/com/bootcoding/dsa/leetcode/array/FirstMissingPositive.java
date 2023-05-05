@@ -12,9 +12,7 @@ public class FirstMissingPositive {
         if (nums.length <= nums[nums.length-1]+1) check = new int[nums.length + 1];
         else check = new int[nums[nums.length - 1] + 1];
 
-        for (int num : nums) {
-            if (num > 0) check[num] += 1;
-        }
+        for (int num : nums) if (num > 0) check[num] += 1;
         for (int j = 1; j < check.length; j++) {
             if (check[j]==0) return j;
         }
