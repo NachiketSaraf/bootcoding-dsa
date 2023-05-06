@@ -2,7 +2,6 @@ package com.bootcoding.dsa.leetcode.array;
 
 public class MoveZeroes {
     public static void main(String[] args) {
-
         int[] a =  moveZeroes(new int[]{0,1,0,3,12});
         for (int i = 0; i<= a.length;i++) System.out.println(a[i]);
 
