@@ -10,17 +10,17 @@ public class MoveZeroes {
 
     }
     public static int[] moveZeroes(int[] nums) {
-        int temp = 0;
+        int tmp = 0;
         for(int i = 0; i<nums.length;i++){
             if(nums[i]!=0) {
-                nums[temp]=nums[i];
-                temp++;
+                nums[tmp]=nums[i];
+                tmp++;
             }
         }
-        while (temp< nums.length)
+        while (tmp< nums.length)
         {
-         nums[temp]=0;
-         temp++;
+         nums[tmp]=0;
+         tmp++;
         }
         return nums;
 
