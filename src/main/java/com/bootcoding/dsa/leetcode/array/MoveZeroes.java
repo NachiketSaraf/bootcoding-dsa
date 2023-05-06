@@ -4,9 +4,7 @@ public class MoveZeroes {
     public static void main(String[] args) {
         int[] nums = {0,1,0,3,12};
         int[] a =  moveZeroes(nums);
-        for (int i = 0; i<= a.length;i++) {
-            System.out.println(a[i]);
-        }
+        for (int i = 0; i<= a.length;i++) System.out.println(a[i]);
 
     }
     public static int[] moveZeroes(int[] nums) {
