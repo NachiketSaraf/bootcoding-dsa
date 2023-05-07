@@ -11,7 +11,7 @@ public class EvenNumberPyramid {
             for (int j = row-i;j>0;j--) {
                 System.out.print("  ");
             }
-            for (int j = 0;j<i;j++) {
+            for (int k = 0;k<i;k++) {
                 even=even+2;
                 System.out.print("  "+even);
             }
