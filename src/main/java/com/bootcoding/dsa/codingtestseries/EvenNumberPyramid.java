@@ -16,7 +16,6 @@ public class EvenNumberPyramid {
                 System.out.print("  "+even);
             }
             System.out.println();
-
         }
     }
 }
