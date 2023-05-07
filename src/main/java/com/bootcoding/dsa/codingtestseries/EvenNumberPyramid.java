@@ -4,7 +4,6 @@ public class EvenNumberPyramid {
     public static void main(String[] args) {
         printEvenNumber();
     }
-
     private static void printEvenNumber() {
         int row = 4;
         int even = 0;
