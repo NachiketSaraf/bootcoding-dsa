@@ -8,12 +8,11 @@ public class SecondLastElementLinkedList {
         Node forthnode = new Node(5);
         Node fifthnode = new Node(6);
 
-        Node head = firstnode;
         firstnode.next = secondnode;
         secondnode.next = thirdnode;
         thirdnode.next = forthnode;
         forthnode.next = fifthnode;
-        int val = secondLastElement(head);
+        int val = secondLastElement(firstnode);
         System.out.println(val);
     }
 
