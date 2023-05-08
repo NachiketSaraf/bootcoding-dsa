@@ -25,9 +25,7 @@ public class SecondLastElementLinkedList {
             temp = temp.next;
         }
         temp = head;
-        for (int i = count-1 ; i>0;i--){
-            temp = temp.next;
-        }
+        for (int i = count-1 ; i>0 ; i--) temp = temp.next;
         return temp.data;
     }
 }
