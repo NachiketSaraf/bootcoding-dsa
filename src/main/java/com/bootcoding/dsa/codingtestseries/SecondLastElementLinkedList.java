@@ -14,7 +14,6 @@ public class SecondLastElementLinkedList {
         thirdnode.next = forthnode;
         forthnode.next = fifthnode;
 
-
         int val = secondLastElement(head);
         System.out.println(val);
     }
