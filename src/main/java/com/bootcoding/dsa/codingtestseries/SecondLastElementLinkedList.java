@@ -18,16 +18,16 @@ public class SecondLastElementLinkedList {
     }
 
     private static int secondLastElement(Node head) {
-        Node temp = head;
+        Node tmp = head;
         int count = 0;
-        while (temp!=null){
+        while (tmp!=null){
             count++;
-            temp = temp.next;
+            tmp = tmp.next;
         }
-        temp = head;
+        tmp = head;
         for (int i = count-1 ; i>0;i--){
-            temp = temp.next;
+            tmp = tmp.next;
         }
-        return temp.data;
+        return tmp.data;
     }
 }
