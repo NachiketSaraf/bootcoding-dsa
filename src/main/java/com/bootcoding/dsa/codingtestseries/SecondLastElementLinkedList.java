@@ -13,7 +13,7 @@ public class SecondLastElementLinkedList {
         secondnode.next = thirdnode;
         thirdnode.next = forthnode;
         forthnode.next = fifthnode;
-        fifthnode = null;
+
 
         int val = secondLastElement(head);
         System.out.println(val);
