@@ -8,9 +8,7 @@ public class ArrayPrintUsingRecusion {
     }
 
     private static void getArray(int[] array,int i) {
-        if (i == array.length){
-            return;
-        }
+        if (i == array.length) return;
         System.out.println(array[i]);
         getArray(array,i+1);
     }
