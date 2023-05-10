@@ -1,6 +1,6 @@
 package com.bootcoding.dsa.recursion;
 
-import java.util.Scanner;
+
 
 public class ArrayPrintUsingRecusion {
 
