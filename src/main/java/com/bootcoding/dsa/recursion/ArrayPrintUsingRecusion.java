@@ -12,7 +12,6 @@ public class ArrayPrintUsingRecusion {
             return;
         }
         System.out.println(array[i]);
-
         getArray(array,i+1);
     }
 
