@@ -11,5 +11,4 @@ public class ArrayPrintUsingRecusion {
         System.out.println(array[k]);
         getArray(array,k+1);
     }
-
 }
