@@ -20,9 +20,7 @@ public class FizzBuzz {
             if (divisibleBy3 && divisibleBy5) ans.add("FizzBuzz");
             else if (divisibleBy3) ans.add("Fizz");
             else if (divisibleBy5) ans.add("Buzz");
-            else {
-                ans.add(Integer.toString(num));
-            }
+            else ans.add(Integer.toString(num));
         }
 
         return ans;
