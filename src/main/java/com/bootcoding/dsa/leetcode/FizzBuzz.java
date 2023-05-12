@@ -13,7 +13,6 @@ public class FizzBuzz {
         List<String> ans = new ArrayList<>();
 
         for (int num = 1; num <= n; num++) {
-
             boolean divisibleBy3 = (num % 3 == 0);
             boolean divisibleBy5 = (num % 5 == 0);
 
