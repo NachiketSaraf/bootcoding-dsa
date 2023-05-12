@@ -7,8 +7,8 @@ public class FizzBuzz {
     public static void main(String[] args) {
 
         List<String> elements = fizzBuzz(10);
-        for(int i = 0; i<elements.size();i++ ){
-            System.out.println(elements.get(i));
+        for (String element : elements) {
+            System.out.println(element);
         }
     }
     public static List<String> fizzBuzz(int n) {
