@@ -10,7 +10,7 @@ public class FizzBuzz {
     }
     public static List<String> fizzBuzz(int n) {
 
-        List<String> ans = new ArrayList<String>();
+        List<String> ans = new ArrayList<>();
 
         for (int num = 1; num <= n; num++) {
 
