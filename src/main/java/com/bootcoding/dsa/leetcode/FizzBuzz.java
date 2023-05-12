@@ -5,7 +5,6 @@ import java.util.List;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-
         List<String> elements = fizzBuzz(10);
         for (String element : elements) System.out.println(element);
     }
