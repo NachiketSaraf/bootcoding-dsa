@@ -9,9 +9,7 @@ public class TribonacciNumber {
     }
     static HashMap<Integer, Integer> cache = new HashMap<>();
     public static int tribonacci(int n) {
-        if (n == 0) {
-            return 0;
-        }
+        if (n == 0) return 0;
         if(n == 1 || n ==2){
             return 1;
         }
