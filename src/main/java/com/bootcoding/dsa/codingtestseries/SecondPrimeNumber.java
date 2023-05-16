@@ -13,7 +13,6 @@ public class SecondPrimeNumber {
         secondnode.next = thirdnode;
         thirdnode.next = forthnode;
         forthnode.next = fifthnode;
-        fifthnode = null;
         printSecondPrime(head);
 
     }
