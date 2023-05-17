@@ -8,13 +8,13 @@ public class SecondPrimeNumber {
         Node forthnode = new Node(4);
         Node fifthnode = new Node(6);
 
-        Node head = firstnode;
+
         firstnode.next = secondnode;
         secondnode.next = thirdnode;
         thirdnode.next = forthnode;
         forthnode.next = fifthnode;
 
-        printSecondPrime(head);
+        printSecondPrime(firstnode);
 
     }
 
