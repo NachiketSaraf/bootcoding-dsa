@@ -5,7 +5,7 @@ public class SecondPrimeNumber {
         Node firstnode = new Node(1);
         Node secondnode = new Node(2);
         Node thirdnode = new Node(3);
-        Node forthnode = new Node(5);
+        Node forthnode = new Node(4);
         Node fifthnode = new Node(6);
 
         Node head = firstnode;
