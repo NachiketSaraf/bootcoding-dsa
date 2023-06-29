@@ -16,6 +16,7 @@ public class Subset {
             }
 
         }
+        return null;
     }
     private static void createAllSubArray(int[] arr) {
         // For creating the sub array
