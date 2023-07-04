@@ -1,4 +1,4 @@
-package com.bootcoding.dsa.leetcode.tree;
+package com.bootcoding.dsa.leetcode.binerytree;
 
 import java.util.LinkedList;
 import java.util.List;
