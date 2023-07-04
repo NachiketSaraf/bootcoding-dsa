@@ -1,4 +1,4 @@
-package com.bootcoding.dsa.leetcode.tree;
+package com.bootcoding.dsa.leetcode.binerytree;
 
 public class TreeNode {
     int val;
