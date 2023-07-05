@@ -21,6 +21,7 @@ public class DeleteMid {
         printAfterDelete(head);
     }
 
+
     private static void printAfterDelete(Node head) {
         Node temp = head;
         int nodeCounter = 1;
