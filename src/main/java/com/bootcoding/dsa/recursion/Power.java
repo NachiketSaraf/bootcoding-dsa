@@ -11,9 +11,7 @@ public class Power {
 
     private static int calcPower(int p, int n) {
 
-        if (p==0){
-            return 1;
-        }
+        if (p==0) return 1;
         return n* calcPower(p-1,n);
 
     }
