@@ -15,6 +15,11 @@ public class RotateArray {
         }
     }
     public static void rotate(int[] nums, int k) {
+
+        reverse(0, k, nums);
+        reverse(k+1, nums.length-1, nums);
+        reverse(0, nums.length-1, nums);
+
         for (int i = 0; i < k/2+1; i++){
             int temp = nums[i];
             nums[i] = nums[k-i];
@@ -32,6 +37,23 @@ public class RotateArray {
             nums[i] = nums[(nums.length-1)-i];
             nums[(nums.length-1)-i] = temp;
         }
+
+    }
+
+    public static void reverse(int start, int size, int[] array){
+        for(int i = start; i < size; i++){
+            int temp =  array[start];
+            array[start] = array[size-i];
+            array[size-i] = temp;
+        }
+    }
+    public static void print(int[] nums){
+        for (int i = 0;i< nums.length;i++){
+            System.out.println(nums[i]);
+        }
+    }
+}
+
 //        while (k!=0){
 //            int temp = nums[nums.length-1];
 //            for (int i= nums.length-1;i>0;i--){
@@ -41,10 +63,3 @@ public class RotateArray {
 //            k--;
 //        }
 //        print(nums);
-    }
-    public static void print(int[] nums){
-        for (int i = 0;i< nums.length;i++){
-            System.out.println(nums[i]);
-        }
-    }
-}
