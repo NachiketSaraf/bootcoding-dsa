@@ -12,7 +12,3 @@ public class AscendingOrder {
         System.out.println(n);
     }
 }
-
-//wap to sum of no frommm 1 to n
-//wap to print even no in decending order
-//wap to print odd no in ascending order
