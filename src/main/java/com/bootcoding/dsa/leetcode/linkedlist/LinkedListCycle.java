@@ -27,10 +27,10 @@ public class LinkedListCycle {
     }
 
     private static void findCycle(ListNode head) {
-        ListNode fastPtr =head ;
         ListNode slowPtr = head;
+        ListNode fastPtr =head.next ;
 
-        while (fastPtr == null || fastPtr.next==null){
+        while (fastPtr != null || fastPtr.next != null){
             if (fastPtr == null || fastPtr.next==null){
                 System.out.println("no cycle found");
                 break;
@@ -43,7 +43,19 @@ public class LinkedListCycle {
             }
         }
     }
-
+//    ListNode fastPtr =head ;
+//    ListNode slowPtr = head;
+//        while (true){
+//        if (fastPtr == null || fastPtr.next==null){
+//            break;
+//        }
+//        slowPtr=slowPtr.next;
+//        fastPtr=fastPtr.next.next;
+//        if (slowPtr==fastPtr){
+//            return true;
+//        }
+//    }
+//        return false;
     public static void printList(ListNode head){
         ListNode temp = head;
         System.out.println();
