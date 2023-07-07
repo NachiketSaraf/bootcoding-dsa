@@ -10,11 +10,7 @@ public class SumOfNumbers1ToN {
     }
 
     private static int printSum(int n) {
-
-        if (n==0){
-            return 0;
-        }
+        if (n==0) return 0;
         return n+ printSum(n-1);
-
     }
 }
