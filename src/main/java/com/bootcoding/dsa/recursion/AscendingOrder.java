@@ -5,9 +5,7 @@ public class AscendingOrder {
         print(5);
     }
     public static void print(int n){
-        if (n == 0){
-            return;
-        }
+        if (n == 0) return;
         print(n-1);
         System.out.println(n);
     }
