@@ -2,7 +2,7 @@ package com.bootcoding.dsa.leetcode.recursion;
 
 public class Fibonacci {
     public static void main(String[] args) {
-      int b= fib(5);
+      int b= fib(55);
         System.out.println(b);
     } public static int fib(int n){
 
