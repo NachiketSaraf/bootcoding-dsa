@@ -7,8 +7,7 @@ import java.util.HashMap;
 public class Fib {
     public static void main(String[] args) {
             Fib f = new Fib();
-           long b = f.fib(6015);
-            System.out.println(b);
+            System.out.println(f.fib(6015));
         }
         HashMap<Long,Long> map = new HashMap<>();
         public long fib(long n){
