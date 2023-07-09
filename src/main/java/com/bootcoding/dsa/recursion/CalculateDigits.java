@@ -6,7 +6,7 @@ public class CalculateDigits {
     public static void main(String[] args) {
         int a = 12345;
         System.out.println(digtis(a));
-        int count = calcDigits(a);
+        int count = calcDigits(0);
         System.out.println(count);
     }
     public static int digtis(int a){
