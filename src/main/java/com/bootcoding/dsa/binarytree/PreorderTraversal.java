@@ -24,18 +24,18 @@ public class PreorderTraversal {
         root.right = n3;
         n2.left = n4;
         n2.right = n5;
-        n3.left = n6;
-        n3.right = n7;
-        n4.left = n8;
-        n4.right = n9;
-        n5.left = n10;
-        n5.right = n11;
-        n6.left = n12;
-        n6.right = n13;
-        n7.left = n14;
-        n7.right = n15;
-        n8.left = n16;
-        n8.right = n17;
+//        n3.left = n6;
+//        n3.right = n7;
+//        n4.left = n8;
+//        n4.right = n9;
+//        n5.left = n10;
+//        n5.right = n11;
+//        n6.left = n12;
+//        n6.right = n13;
+//        n7.left = n14;
+//        n7.right = n15;
+//        n8.left = n16;
+//        n8.right = n17;
 
         preorder(root);
     }
