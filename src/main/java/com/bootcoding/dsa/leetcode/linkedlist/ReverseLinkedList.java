@@ -1,6 +1,6 @@
 package com.bootcoding.dsa.leetcode.linkedlist;
 
-public class ReverseLinkedList {
+public class  ReverseLinkedList {
     public static void main(String[] args) {
         ListNode firstnode = new ListNode(1);
         ListNode secondnode = new ListNode(2);
