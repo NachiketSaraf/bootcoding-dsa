@@ -29,13 +29,13 @@ public class Postorder {
         n4.left = n8;
         n4.right = n9;
         n5.left = n10;
-        n5.right = n11;
-        n6.left = n12;
-        n6.right = n13;
-        n7.left = n14;
-        n7.right = n15;
-        n8.left = n16;
-        n8.right = n17;
+//        n5.right = n11;
+//        n6.left = n12;
+//        n6.right = n13;
+//        n7.left = n14;
+//        n7.right = n15;
+//        n8.left = n16;
+//        n8.right = n17;
 
 
         postorder(root);
