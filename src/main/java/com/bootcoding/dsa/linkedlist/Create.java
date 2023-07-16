@@ -10,7 +10,7 @@ public class Create {
 
 
         Node head = firstNode;
-        firstNode.next= secondNode;
+        head.next= secondNode;
         secondNode.next = thirdNode;
         thirdNode.next = forthNode;
         forthNode.next = null;
