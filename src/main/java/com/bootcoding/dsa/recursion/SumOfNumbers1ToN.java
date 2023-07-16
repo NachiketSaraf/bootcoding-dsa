@@ -3,7 +3,6 @@ package com.bootcoding.dsa.recursion;
 public class SumOfNumbers1ToN {
     public static void main(String[] args) {
         int n = 5;
-
         int s=printSum(n);
         System.out.println(s);
 
