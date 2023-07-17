@@ -1,5 +1,8 @@
 package com.bootcoding.dsa.binarytree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class LevelOfTheTree {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
@@ -37,6 +40,19 @@ public class LevelOfTheTree {
         n8.left = n16;
         n8.right = n17;
 
-
+        levelOrder(root);
+    }
+    public static void levelOrder(TreeNode root){
+        Queue<TreeNode> queue = new LinkedList<>();
+        if (root == null) return;
+        queue.offer(root);
+        while (!queue.isEmpty()){
+            int levelNum = queue.size();
+            for (int i=0 ; i<levelNum ; i++){
+                if (queue.peek().left != null) queue.offer(queue.peek().left);
+                if (queue.peek().right != null) queue.offer(queue.peek().right);
+                System.out.println(queue.poll().data);
+            }
+        }
     }
 }
