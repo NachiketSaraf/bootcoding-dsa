@@ -4,14 +4,19 @@ public class InvertBinaryTree {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(4);
         TreeNode n2 = new TreeNode(2);
-        TreeNode n3 = new TreeNode(1);
-        TreeNode n4 = new TreeNode(3);
-        TreeNode n5 = new TreeNode(7);
+        TreeNode n1 = new TreeNode(1);
+        TreeNode n3 = new TreeNode(3);
+        TreeNode n7 = new TreeNode(7);
         TreeNode n6 = new TreeNode(6);
-        TreeNode n7 = new TreeNode(9);
+        TreeNode n9 = new TreeNode(9);
 
         root.left = n2;
-        root.right = n5 ;
+        root.right = n7;
+        n2.left=n1;
+        n2.right=n3;
+        n7.left=n6;
+        n7.right=n9;
+
 
     }
     public static TreeNode invertTree(TreeNode root) {
