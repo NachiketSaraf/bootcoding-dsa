@@ -9,6 +9,7 @@ public class InvertBinaryTree {
         TreeNode n7 = new TreeNode(7);
         TreeNode n6 = new TreeNode(6);
         TreeNode n9 = new TreeNode(9);
+        TreeNode n10 = new TreeNode(10);
 
         root.left = n2;
         root.right = n7;
@@ -16,6 +17,7 @@ public class InvertBinaryTree {
         n2.right=n3;
         n7.left=n6;
         n7.right=n9;
+        n9.left=n10;
 
 
     }
