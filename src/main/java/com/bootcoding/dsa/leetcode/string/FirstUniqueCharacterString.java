@@ -10,22 +10,39 @@ public class FirstUniqueCharacterString {
         System.out.println(firstUniqChar(s));
     }
     public static int firstUniqChar(String s) {
-        Map<Character,Integer> map =new LinkedHashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            char key = s.charAt(i);
-            if (map.containsKey(key)){
-                Integer integer = map.get(key);
-                map.put(key,integer+1);
-            }
-            else {
-                map.put(key,1);
+        int[] hash = new int[26];
+
+        for (int i = 0; i < s.length() ; i++) {
+            hash[s.charAt(i)-'a'] +=1;
+        }
+        for (int j = 0; j < s.length(); j++) {
+            if (hash[s.charAt(j)-'a'] == 1){
+                return j;
             }
         }
-        for (Character n: map.keySet()) {
-            if (map.get(n) == 1 ){
-                return n;
-            }
-        }
+
         return -1;
+
+//        Map<Character,Integer> map =new LinkedHashMap<>();
+//        for (int i = 0; i < s.length(); i++) {
+//            char key = s.charAt(i);
+//            if (map.containsKey(key)){
+//                Integer integer = map.get(key);
+//                map.put(key,integer+1);
+//            }
+//            else {
+//                map.put(key,1);
+//            }
+//        }
+//        for (Character n: map.keySet()) {
+//            if (map.get(n) == 1 ){
+//                for (int i = 0; i < s.length(); i++) {
+//                    if (s.charAt(i) == n){
+//                        return i;
+//                    }
+//                }
+//            }
+//        }
+
     }
 }
