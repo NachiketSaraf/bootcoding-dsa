@@ -41,13 +41,10 @@ public class Target {
     }
 
     private static boolean findTarget(TreeNode root,int x) {
-        if(root == null){
-            return false;
-        }
+        if(root == null) return false;
         if (root.data == x) return true;
         findTarget(root.left,x);
         findTarget(root.right,x);
-
         return false;
     }
 }
