@@ -17,13 +17,13 @@ public class InsertElement {
         n4.right = n5;
 
         insert(root, 4);
-//        insert(root,70);
-//        insert(root,7);
-//        insert(root,2);
-//        insert(root,3);
-//        insert(root,19);
-//        insert(root,22);
-//        insert(root,21);
+        insert(root,70);
+        insert(root,7);
+        insert(root,2);
+        insert(root,3);
+        insert(root,19);
+        insert(root,22);
+        insert(root,21);
 
         inorder(root);
     }
