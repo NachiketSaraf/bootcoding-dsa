@@ -1,7 +1,5 @@
 package com.bootcoding.dsa.binarytree;
 
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class LevelOfTheTree {
     public static void main(String[] args) {
@@ -13,15 +11,6 @@ public class LevelOfTheTree {
         TreeNode n6 = new TreeNode(6);
         TreeNode n7 = new TreeNode(7);
         TreeNode n8 = new TreeNode(8);
-        TreeNode n9 = new TreeNode(9);
-        TreeNode n10 = new TreeNode(10);
-        TreeNode n11 = new TreeNode(11);
-        TreeNode n12 = new TreeNode(12);
-        TreeNode n13 = new TreeNode(13);
-        TreeNode n14 = new TreeNode(14);
-        TreeNode n15 = new TreeNode(15);
-        TreeNode n16 = new TreeNode(16);
-        TreeNode n17 = new TreeNode(17);
 
         root.left = n2;
         root.right = n3;
@@ -30,29 +19,15 @@ public class LevelOfTheTree {
         n3.left = n6;
         n3.right = n7;
         n4.left = n8;
-        n4.right = n9;
-        n5.left = n10;
-        n5.right = n11;
-        n6.left = n12;
-        n6.right = n13;
-        n7.left = n14;
-        n7.right = n15;
-        n8.left = n16;
-        n8.right = n17;
 
-        levelOrder(root);
+        System.out.println(levelOfBinaryTree(root));
     }
-    public static void levelOrder(TreeNode root){
-        Queue<TreeNode> queue = new LinkedList<>();
-        if (root == null) return;
-        queue.offer(root);
-        while (!queue.isEmpty()){
-            int levelNum = queue.size();
-            for (int i=0 ; i<levelNum ; i++){
-                if (queue.peek().left != null) queue.offer(queue.peek().left);
-                if (queue.peek().right != null) queue.offer(queue.peek().right);
-                System.out.println(queue.poll().data);
-            }
-        }
+    public static int levelOfBinaryTree(TreeNode root){
+        if (root== null) return -1;
+
+        int lh = levelOfBinaryTree(root.left);
+        int rh = levelOfBinaryTree(root.right);
+
+        return 1+Math.max(lh,rh);
     }
 }
