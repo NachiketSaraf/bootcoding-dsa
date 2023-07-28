@@ -79,4 +79,3 @@ public class RemoveLinkedListElements {
 return temp;
     }
 }
-//wap delete middle element in linked list
