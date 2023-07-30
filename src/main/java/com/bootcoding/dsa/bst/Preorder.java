@@ -18,9 +18,7 @@ public class Preorder {
         preorder(root);
     }
     public static void preorder(TreeNode root){
-        if(root == null){
-            return;
-        }
+        if(root == null) return;
         System.out.println(root.data);
         preorder(root.left);
         preorder(root.right);
