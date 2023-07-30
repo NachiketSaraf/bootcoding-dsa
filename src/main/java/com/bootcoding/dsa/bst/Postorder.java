@@ -18,9 +18,7 @@ public class Postorder {
         postorder(root);
     }
     public static void postorder(TreeNode root){
-        if (root == null){
-            return;
-        }
+        if (root == null) return;
         postorder(root.left);
         postorder(root.right);
         System.out.println(root.data);
