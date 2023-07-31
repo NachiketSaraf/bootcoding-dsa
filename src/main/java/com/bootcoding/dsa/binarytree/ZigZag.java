@@ -45,26 +45,22 @@ public class ZigZag {
         zigZaglevelOrder(root);
     }
     public static void zigZaglevelOrder(TreeNode root){
-        if (root == null) return;
-        Queue<TreeNode> queue =new ArrayDeque<>();
-        queue.offer(root);
-        boolean leftToRight = true;
+        if (root == null) {
+            return;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
 
+        boolean LeftToRight = false;
         while (!queue.isEmpty()){
             int size = queue.size();
-            for (int i=0 ; i<size ; i++){
-               TreeNode node = queue.peek();
-               queue.poll();
-
-           //    int index = (leftToRight) ? i:(size-1-i);
-
-//               if(node.left){
-//                   queue.add(node.left);
-//               }
-//               if(node.right){
-//
-//               }
+            for (int i = 0; i < size; i++) {
+                int
+                if (queue.peek().left != null) queue.offer(queue.peek().left);
+                if (queue.peek().right != null) queue.offer(queue.peek().right);
+                System.out.print(queue.poll().data);
             }
+            System.out.println();
         }
     }
 }
