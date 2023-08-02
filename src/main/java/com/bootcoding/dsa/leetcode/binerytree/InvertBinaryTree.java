@@ -19,7 +19,7 @@ public class InvertBinaryTree {
         n7.right=n9;
         n9.left=n10;
 
-
+        invertTree(root);
     }
     public static TreeNode invertTree(TreeNode root) {
         if(root == null){
