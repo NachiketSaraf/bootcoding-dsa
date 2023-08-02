@@ -15,12 +15,33 @@ public class FindElement {
         n3.right = n6;
         n4.right = n5;
 
-        System.out.println(search(root,10));
+        System.out.println();
+        Inorder.inorder(search(root,15));
     }
 
-    private static boolean search(TreeNode root , int target) {
-        if (root== null) return false;
-        if (root.data == target) return true;
-        return  (target< root.data)? search(root.left,target):search(root.right,target);
+//    private static boolean search(TreeNode root , int target) {
+//        if (root== null) return false;
+//        if (root.data == target) return true;
+//        return  (target< root.data)? search(root.left,target):search(root.right,target);
+//    }
+    private static TreeNode search(TreeNode root , int target) {
+        if (root== null) return null;
+        if (root.data == target) return root;
+        if (target< root.data){
+            if (root.left != null) {
+                search(root.left, target);
+            }
+            else
+                return root;
+
+        }
+        else {
+            if (root.right != null){
+                search(root.right,target);
+            }
+            else return root;
+
+        }
+        return root;
     }
 }
