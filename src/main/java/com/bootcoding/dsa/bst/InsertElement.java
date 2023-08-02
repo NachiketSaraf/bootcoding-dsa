@@ -28,6 +28,7 @@ public class InsertElement {
         inorder(root);
     }
 
+
     private static void insert(TreeNode root, int x) {
         if (root==null) return;
         if (root.data == x) return;
