@@ -55,7 +55,7 @@ public class ZigZag {
         while (!queue.isEmpty()){
             int size = queue.size();
             for (int i = 0; i < size; i++) {
-                int
+
                 if (queue.peek().left != null) queue.offer(queue.peek().left);
                 if (queue.peek().right != null) queue.offer(queue.peek().right);
                 System.out.print(queue.poll().data);
