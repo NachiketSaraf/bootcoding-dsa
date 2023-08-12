@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class RotateImage {
     public static void main(String[] args) {
         HashMap<Integer,Integer> hashMap = new HashMap<>();
-        rotate(matrix,hashMap);
+      //  rotate(matrix,hashMap);
     }
     public static void rotate(int[][] matrix, int hashmap) {
         int row = matrix.length;
