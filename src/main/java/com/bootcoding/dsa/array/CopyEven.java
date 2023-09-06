@@ -1,9 +1,10 @@
 package com.bootcoding.dsa.array;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CopyEven {
-    public static void main(String[] args) {
+    public static  void main(String[] args) {
         int[] arr = {14,35,66,75,92,3,5,8,7,9};
         int[] res = copyEvenInNewArray(arr);
         Arrays.stream(res).forEach(System.out::println);
@@ -19,6 +20,7 @@ public class CopyEven {
                 index++;
             }
         }
+
         return res;
     }
 }
