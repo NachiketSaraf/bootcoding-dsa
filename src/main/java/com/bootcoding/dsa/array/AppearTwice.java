@@ -2,7 +2,7 @@ package com.bootcoding.dsa.array;
 
 public class AppearTwice {
     public static void main(String[] args) {
-        int[] a = {10,15,20,25,35};
+        int[] a = {10,15,25,25,35};
         System.out.println(checkDuplicate(a));
     }
 
