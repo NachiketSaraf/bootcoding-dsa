@@ -2,7 +2,7 @@ package com.bootcoding.dsa.bst;
 
 
 public class InsertElement {
-    public static void main(String[] args) {
+    public static final void main(String[] args) {
         TreeNode root = new TreeNode(5);
         TreeNode n2 = new TreeNode(14);
         TreeNode n3 = new TreeNode(10);
@@ -49,6 +49,7 @@ public class InsertElement {
         System.out.println(root.data);
         inorder(root.right);
     }
+
 
 }
 
