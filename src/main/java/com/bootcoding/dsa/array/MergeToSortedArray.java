@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class MergeToSortedArray {
     public static void main(String[] args) {
-        int[] a ={1,3};
+        int[] aa ={1,3};
         int[] b = {2};
-        System.out.println(mergeArray(a,b));
+        System.out.println(mergeArray(aa,b));
 
     }
     public static double mergeArray(int[] a, int[] b){
