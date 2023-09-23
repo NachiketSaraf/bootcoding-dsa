@@ -7,14 +7,14 @@ public class AppearTwice {
     }
 
     private static boolean checkDuplicate(int[] a) {
-        int c =0;
+        int cn =0;
         for (int i = 0; i< a.length;i++){
-            c =0;
+            cn =0;
             for (int j = i; j<a.length;j++){
                 if (a[i]==a[j]){
-                    c++;
+                    cn++;
                 }
-                if (c>=2) return true;
+                if (cn>=2) return true;
             }
         }
         return false;
