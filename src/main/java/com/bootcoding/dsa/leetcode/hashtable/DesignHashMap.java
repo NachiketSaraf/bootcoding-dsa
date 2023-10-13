@@ -11,6 +11,8 @@ public class DesignHashMap {
             this.val = val;
         }
     }
+
+
     final ListNode[] nodes = new ListNode[10_000];
 
     public void put(int key, int value){
