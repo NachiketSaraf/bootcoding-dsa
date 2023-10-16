@@ -7,8 +7,8 @@ import java.util.Map;
 
 public class MajorityElementII {
     public static void main(String[] args) {
-        int[] a={3,2,3};
-        majorityElement(a);
+//        int[] a=;
+        majorityElement(new int[]{3,2,3});
 
     }
     public static List<Integer> majorityElement(int[] nums) {
