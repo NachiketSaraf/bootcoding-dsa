@@ -10,6 +10,8 @@ public class MajorityElementII {
 //        int[] a=;
         majorityElement(new int[]{3,2,3});
 
+        
+        
     }
     public static List<Integer> majorityElement(int[] nums) {
         Map<Integer,Integer> elementCount = new HashMap<>();
