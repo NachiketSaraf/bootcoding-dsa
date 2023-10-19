@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class RansomNote {
     public static void main(String[] args) {
-        System.out.println(canConstruct("aa","aab"));
+        System.out.println(canConstruct("aaa","aaaaabbc"));
     }
     public static boolean canConstruct(String ransomNote, String magazine) {
         Map<Character,Integer> magHash = new HashMap<>();
