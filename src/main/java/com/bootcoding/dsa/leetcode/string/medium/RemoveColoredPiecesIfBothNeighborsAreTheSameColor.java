@@ -3,7 +3,7 @@ package com.bootcoding.dsa.leetcode.string.medium;
 public class RemoveColoredPiecesIfBothNeighborsAreTheSameColor {
     public static void main(String[] args) {
         String colors = "AAABABB";
-        winnerOfGame(colors);
+        System.out.println(winnerOfGame(colors));
     }
     public static boolean winnerOfGame(String colors) {
         int aliceScore = 0;
