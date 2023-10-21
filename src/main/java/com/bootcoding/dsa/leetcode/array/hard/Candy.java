@@ -4,6 +4,9 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Candy {
+    public static void main(String[] args) {
+
+    }
     public static int candy(int[] ratings) {
         int[] leftTraverse = new int[ratings.length];
         Arrays.fill(leftTraverse,1);
