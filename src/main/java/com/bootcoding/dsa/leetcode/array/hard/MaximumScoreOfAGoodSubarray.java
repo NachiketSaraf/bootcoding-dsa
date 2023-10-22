@@ -4,7 +4,7 @@ public class MaximumScoreOfAGoodSubarray {
     public static void main(String[] args) {
         int[] nums = {1,4,3,7,4,5};
         int k = 3;
-        maximumScore(nums,k);
+        System.out.println(maximumScore(nums,k));
     }
     public static int maximumScore(int[] nums, int k) {
         int left = k, right = k;
