@@ -27,4 +27,5 @@ public class RemoveColoredPiecesIfBothNeighborsAreTheSameColor {
         // Determine the winner based on the scores
         return aliceScore > bobScore;
     }
+
 }
