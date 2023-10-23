@@ -3,6 +3,7 @@ package com.bootcoding.dsa.leetcode.array;
 public class BestTimeToBuyAndSellStock {
     public static void main(String[] args) {
         int[] p ={7,1,5,3,6,4};
+        int[] p1 ={8,2,6,4,7,5};
         System.out.println(maxProfit(p));
     }
     public static int maxProfit(int[] prices) {
