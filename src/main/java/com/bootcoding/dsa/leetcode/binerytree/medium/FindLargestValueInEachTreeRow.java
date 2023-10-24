@@ -10,6 +10,9 @@ import java.util.List;
 import java.util.Queue;
 
 public class FindLargestValueInEachTreeRow {
+    public static void main(String[] args) {
+
+    }
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> res = new ArrayList<>();
 
