@@ -1,7 +1,5 @@
 package com.bootcoding.dsa.leetcode.binerytree.medium;
 
-
-
 import com.bootcoding.dsa.leetcode.binerytree.TreeNode;
 
 import java.util.ArrayList;
@@ -42,7 +40,6 @@ public class FindLargestValueInEachTreeRow {
 
             res.add(max_val);
         }
-
         return res;
     }
 }
