@@ -18,8 +18,8 @@ public class FindLargestValueInEachTreeRow {
             return result;
         }
 
-        Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
 
         while (!q.isEmpty()) {
             int max_val = Integer.MIN_VALUE;
