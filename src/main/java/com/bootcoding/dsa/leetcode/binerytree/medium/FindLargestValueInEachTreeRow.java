@@ -21,7 +21,7 @@ public class FindLargestValueInEachTreeRow {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
-        while (!q.isEmpty()) {
+        while (!queue.isEmpty()) {
             int max_val = Integer.MIN_VALUE;
             int levelSize = q.size();
 
