@@ -26,7 +26,7 @@ public class FindLargestValueInEachTreeRow {
             int levelSize = queue.size();
 
             for (int i = 0; i < levelSize; i++) {
-                TreeNode node = q.poll();
+                TreeNode node = queue.poll();
                 max_val = Math.max(max_val, node.val);
 
                 if (node.left != null) {
