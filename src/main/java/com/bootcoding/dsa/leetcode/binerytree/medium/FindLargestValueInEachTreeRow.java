@@ -30,7 +30,7 @@ public class FindLargestValueInEachTreeRow {
                 max_val = Math.max(max_val, node.val);
 
                 if (node.left != null) {
-                    q.add(node.left);
+                    queue.add(node.left);
                 }
 
                 if (node.right != null) {
