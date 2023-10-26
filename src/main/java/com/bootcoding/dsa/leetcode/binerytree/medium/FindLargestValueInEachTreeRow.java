@@ -15,7 +15,7 @@ public class FindLargestValueInEachTreeRow {
         List<Integer> result = new ArrayList<>();
 
         if (root == null) {
-            return res;
+            return result;
         }
 
         Queue<TreeNode> q = new LinkedList<>();
