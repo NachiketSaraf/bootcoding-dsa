@@ -40,6 +40,6 @@ public class FindLargestValueInEachTreeRow {
 
             result.add(max_val);
         }
-        return res;
+        return result;
     }
 }
