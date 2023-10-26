@@ -12,7 +12,7 @@ public class FindLargestValueInEachTreeRow {
 
     }
     public static List<Integer> largestValues(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
 
         if (root == null) {
             return res;
