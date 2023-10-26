@@ -34,7 +34,7 @@ public class FindLargestValueInEachTreeRow {
                 }
 
                 if (node.right != null) {
-                    q.add(node.right);
+                    queue.add(node.right);
                 }
             }
 
