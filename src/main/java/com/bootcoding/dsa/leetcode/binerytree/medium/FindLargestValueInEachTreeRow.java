@@ -38,7 +38,7 @@ public class FindLargestValueInEachTreeRow {
                 }
             }
 
-            res.add(max_val);
+            result.add(max_val);
         }
         return res;
     }
