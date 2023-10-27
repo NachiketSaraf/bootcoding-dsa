@@ -3,7 +3,7 @@ package com.bootcoding.dsa.leetcode.string.medium;
 public class LongestPalindromicSubstring {
     public static void main(String[] args) {
         String s = "babad";
-        longestPalindrome(s);
+        System.out.println(longestPalindrome(s));
     }
     public static String longestPalindrome(String s) {
         StringBuilder stringBuilder = new StringBuilder("^#");
