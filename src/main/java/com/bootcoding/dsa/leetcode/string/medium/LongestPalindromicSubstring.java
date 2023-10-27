@@ -1,6 +1,9 @@
 package com.bootcoding.dsa.leetcode.string.medium;
 
 public class LongestPalindromicSubstring {
+    public static void main(String[] args) {
+
+    }
     public String longestPalindrome(String s) {
         StringBuilder stringBuilder = new StringBuilder("^#");
         for (char c : s.toCharArray()) {
