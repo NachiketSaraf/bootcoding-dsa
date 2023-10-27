@@ -3,8 +3,9 @@ package com.bootcoding.dsa.leetcode.string.medium;
 public class LongestPalindromicSubstring {
     public static void main(String[] args) {
         String s = "babad";
+        longestPalindrome(s);
     }
-    public String longestPalindrome(String s) {
+    public static String longestPalindrome(String s) {
         StringBuilder stringBuilder = new StringBuilder("^#");
         for (char c : s.toCharArray()) {
             stringBuilder.append(c).append("#");
