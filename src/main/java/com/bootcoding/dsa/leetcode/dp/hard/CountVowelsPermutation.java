@@ -2,7 +2,7 @@ package com.bootcoding.dsa.leetcode.dp.hard;
 
 public class CountVowelsPermutation {
     public static void main(String[] args) {
-        int n = 1;
+        int n = 2;
         System.out.println(countVowelPermutation(n));
     }
     public static int countVowelPermutation(int n) {
