@@ -3,7 +3,7 @@ package com.bootcoding.dsa.leetcode.dp.hard;
 public class CountVowelsPermutation {
     public static void main(String[] args) {
         int n = 1;
-
+        countVowelPermutation(n);
     }
     public static int countVowelPermutation(int n) {
         final int MOD = 1000000007;
