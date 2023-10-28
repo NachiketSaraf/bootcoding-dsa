@@ -3,8 +3,9 @@ package com.bootcoding.dsa.leetcode.dp.hard;
 public class CountVowelsPermutation {
     public static void main(String[] args) {
         int n = 1;
+
     }
-    public int countVowelPermutation(int n) {
+    public static int countVowelPermutation(int n) {
         final int MOD = 1000000007;
 
         long a = 1, e = 1, i = 1, o = 1, u = 1;
