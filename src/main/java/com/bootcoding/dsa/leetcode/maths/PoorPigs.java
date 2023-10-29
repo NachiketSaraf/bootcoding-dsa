@@ -3,6 +3,7 @@ package com.bootcoding.dsa.leetcode.maths;
 public class PoorPigs {
     public static void main(String[] args) {
        int buckets = 4;
+        int minutesToDie = 15;
 
     }
     public static int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
