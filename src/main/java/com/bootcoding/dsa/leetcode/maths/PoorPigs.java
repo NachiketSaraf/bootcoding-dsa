@@ -5,6 +5,7 @@ public class PoorPigs {
        int buckets = 4;
        int minutesToDie = 15;
        int minutesToTest = 15;
+       poorPigs(buckets,minutesToDie,minutesToTest);
     }
     public static int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
         int test = minutesToTest/minutesToDie;
