@@ -11,7 +11,7 @@ public class SortIntegersByTheNumberOf1Bits {
 //The countOneBits loop iterates for the number of bits in the input number, which is log₂(n)
 //sort takes nlogn
 
-        public int countOneBits(int num) {
+        public static int countOneBits(int num) {
             int count = 0;
             while (num != 0) {
                 count += num & 1;
