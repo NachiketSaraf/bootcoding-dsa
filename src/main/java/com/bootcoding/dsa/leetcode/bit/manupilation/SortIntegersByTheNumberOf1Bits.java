@@ -1,4 +1,5 @@
 package com.bootcoding.dsa.leetcode.bit.manupilation;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 public class SortIntegersByTheNumberOf1Bits {
     public static void main(String[] args) {
@@ -9,10 +10,13 @@ public class SortIntegersByTheNumberOf1Bits {
         }
     }
     public static int[] sortByBits(int[] arr) {
-        Integer[] boxedArr = new Integer[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            boxedArr[i] = arr[i];
-        }
+        Integer[] boxedArr =  Arrays.stream(arr).boxed().toArray(Integer[]::new);
+//        Integer[] boxedArr = new Integer[arr.length];
+//        for (int i = 0; i < arr.length; i++) {
+//            boxedArr[i] = arr[i];
+//        }
+
+
 
         Arrays.sort(boxedArr, (a, b) -> {
             int countA = Integer.bitCount(a);
