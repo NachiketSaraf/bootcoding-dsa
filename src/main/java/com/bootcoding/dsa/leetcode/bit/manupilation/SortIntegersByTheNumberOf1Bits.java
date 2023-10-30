@@ -3,7 +3,10 @@ import java.util.Arrays;
 public class SortIntegersByTheNumberOf1Bits {
     public static void main(String[] args) {
         int[] arr = {0,1,2,3,4,5,6,7,8};
-        sortByBits(arr);
+        int[] ans = sortByBits(arr);
+        for (int i : ans){
+            System.out.println(i);
+        }
     }
     /***************************************************************** JAVA *****************************************************************/
 //Approach-1 (Using self written countBits function inside lambda)
