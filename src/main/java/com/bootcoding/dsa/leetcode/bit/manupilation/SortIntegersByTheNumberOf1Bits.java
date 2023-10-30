@@ -34,10 +34,12 @@ public class SortIntegersByTheNumberOf1Bits {
             return Integer.compare(countA, countB);
         });
 
+        // using stream to copy from Integer array to int array
         arr = Arrays.stream(boxedArr)
                 .mapToInt(Integer::intValue)
                 .toArray();
 
+        // Normal way to copy array
         for (int i = 0; i < arr.length; i++) {
             arr[i] = boxedArr[i];
         }
