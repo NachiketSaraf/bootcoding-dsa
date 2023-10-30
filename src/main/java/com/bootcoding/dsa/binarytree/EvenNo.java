@@ -35,7 +35,7 @@ public class EvenNo {
 //        n7.left = n14;
 //        n7.right = n15;
 //        n8.left = n16;
-        n8.right = n17;
+//        n8.right = n17;
         printEven(root);
 
 
