@@ -9,7 +9,7 @@ public class SortIntegersByTheNumberOf1Bits {
 //T.C : O(n*logn * log(num))
 //The countOneBits loop iterates for the number of bits in the input number, which is log₂(n)
 //sort takes nlogn
-    class Solution {
+
         public int countOneBits(int num) {
             int count = 0;
             while (num != 0) {
@@ -42,7 +42,7 @@ public class SortIntegersByTheNumberOf1Bits {
 
             return arr;
         }
-    }
+
 
 
 //Approach-2 (using inbuilt function)
@@ -50,7 +50,7 @@ public class SortIntegersByTheNumberOf1Bits {
 //So, overall T.C : O(n log n) by sorting
 
 
-    class Solution1 {
+
         public int[] sortByBits(int[] arr) {
             Integer[] boxedArr = new Integer[arr.length];
             for (int i = 0; i < arr.length; i++) {
@@ -74,6 +74,6 @@ public class SortIntegersByTheNumberOf1Bits {
 
             return arr;
         }
-    }
+
 }
 
