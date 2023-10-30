@@ -47,7 +47,7 @@ public class SortIntegersByTheNumberOf1Bits {
 //So, overall T.C : O(nlogn) by sorting
 
 
-    class Solution {
+    class Solution1 {
         public int[] sortByBits(int[] arr) {
             Integer[] boxedArr = new Integer[arr.length];
             for (int i = 0; i < arr.length; i++) {
