@@ -1,5 +1,5 @@
 package com.bootcoding.dsa.leetcode.bit.manupilation;
-
+import java.util.Arrays;
 public class SortIntegersByTheNumberOf1Bits {
     /***************************************************************** JAVA *****************************************************************/
 //Approach-1 (Using self written countBits function inside lambda)
@@ -45,7 +45,7 @@ public class SortIntegersByTheNumberOf1Bits {
 //Approach-2 (using inbuilt function)
 //T.C : Integer.bitCount calculates the number of set bits (1 bits) in an integer in constant time, not depending on the size of the integer.
 //So, overall T.C : O(nlogn) by sorting
-import java.util.Arrays;
+
 
     class Solution {
         public int[] sortByBits(int[] arr) {
