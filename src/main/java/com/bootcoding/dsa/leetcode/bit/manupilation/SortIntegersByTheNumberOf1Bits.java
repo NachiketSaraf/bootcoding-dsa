@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class SortIntegersByTheNumberOf1Bits {
     public static void main(String[] args) {
         int[] arr = {0,1,2,3,4,5,6,7,8};
+
     }
     /***************************************************************** JAVA *****************************************************************/
 //Approach-1 (Using self written countBits function inside lambda)
@@ -19,7 +20,7 @@ public class SortIntegersByTheNumberOf1Bits {
             return count;
         }
 
-        public int[] sortByBitsLambda(int[] arr) {
+        public static int[] sortByBitsLambda(int[] arr) {
             Integer[] boxedArr = new Integer[arr.length];
             for (int i = 0; i < arr.length; i++) {
                 boxedArr[i] = arr[i];
