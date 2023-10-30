@@ -34,6 +34,10 @@ public class SortIntegersByTheNumberOf1Bits {
             return Integer.compare(countA, countB);
         });
 
+        arr = Arrays.stream(boxedArr)
+                .mapToInt(Integer::intValue)
+                .toArray();
+
         for (int i = 0; i < arr.length; i++) {
             arr[i] = boxedArr[i];
         }
