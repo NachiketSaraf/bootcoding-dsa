@@ -44,7 +44,7 @@ public class SortIntegersByTheNumberOf1Bits {
 
 //Approach-2 (using inbuilt function)
 //T.C : Integer.bitCount calculates the number of set bits (1 bits) in an integer in constant time, not depending on the size of the integer.
-//So, overall T.C : O(nlogn) by sorting
+//So, overall T.C : O(n log n) by sorting
 
 
     class Solution1 {
