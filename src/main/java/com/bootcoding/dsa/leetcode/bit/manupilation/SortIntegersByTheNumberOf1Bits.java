@@ -1,6 +1,9 @@
 package com.bootcoding.dsa.leetcode.bit.manupilation;
 import java.util.Arrays;
 public class SortIntegersByTheNumberOf1Bits {
+    public static void main(String[] args) {
+
+    }
     /***************************************************************** JAVA *****************************************************************/
 //Approach-1 (Using self written countBits function inside lambda)
 //T.C : O(n*logn * log(num))
