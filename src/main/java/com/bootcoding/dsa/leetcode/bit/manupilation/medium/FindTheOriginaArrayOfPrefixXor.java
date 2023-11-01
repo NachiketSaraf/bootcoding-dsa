@@ -3,7 +3,7 @@ package com.bootcoding.dsa.leetcode.bit.manupilation.medium;
 public class FindTheOriginaArrayOfPrefixXor {
     public static void main(String[] args) {
        int[] pref = {5,2,0,3,1};
-       findArray(pref);
+       int[] ans = findArray(pref);
     }
     public static int[] findArray(int[] pref) {
         int[] arr = new int[pref.length];
