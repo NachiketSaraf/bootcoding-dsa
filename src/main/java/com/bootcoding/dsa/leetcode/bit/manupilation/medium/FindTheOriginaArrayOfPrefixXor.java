@@ -1,6 +1,9 @@
 package com.bootcoding.dsa.leetcode.bit.manupilation.medium;
 
 public class FindTheOriginaArrayOfPrefixXor {
+    public static void main(String[] args) {
+
+    }
     public int[] findArray(int[] pref) {
         int[] arr = new int[pref.length];
         arr[0] = pref[0];
