@@ -6,7 +6,9 @@ public class FindTheOriginaArrayOfPrefixXor {
     public static void main(String[] args) {
        int[] pref = {5,2,0,3,1};
        int[] ans = findArray(pref);
-        Arrays.stream(ans);
+        for (int n: ans) {
+            System.out.println(n);
+        }
     }
     public static int[] findArray(int[] pref) {
         int[] arr = new int[pref.length];
