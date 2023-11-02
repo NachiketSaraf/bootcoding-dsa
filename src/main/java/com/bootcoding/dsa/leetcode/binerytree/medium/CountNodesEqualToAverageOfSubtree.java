@@ -16,9 +16,9 @@ public class CountNodesEqualToAverageOfSubtree {
         node.left = node2;
         node.right = node3;
         node1.right=node4;
+
         System.out.println( averageOfSubtree(root));
         System.out.println( averageOfSubtreeBruteForce(root));
-
     }
 
     // O(n) approach
