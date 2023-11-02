@@ -53,9 +53,7 @@ public class CountNodesEqualToAverageOfSubtree {
     }
 
     private static void solve(TreeNode root, int[] result) {
-        if (root == null) {
-            return;
-        }
+        if (root == null) return;
 
         int[] count = {0};
         int totalSum = sum(root, count);
