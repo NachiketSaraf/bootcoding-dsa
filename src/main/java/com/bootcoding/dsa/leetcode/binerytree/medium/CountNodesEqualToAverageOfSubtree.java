@@ -19,6 +19,8 @@ public class CountNodesEqualToAverageOfSubtree {
         System.out.println( averageOfSubtree(root));
 
     }
+
+    // O(n) approach
     public static int averageOfSubtree(TreeNode root) {
         int[] result = new int[1];
         findSum(root,result);
@@ -41,4 +43,6 @@ public class CountNodesEqualToAverageOfSubtree {
         return new int[]{totalSum,totalCount};
 
     }
+
+
 }
