@@ -16,7 +16,7 @@ public class CountNodesEqualToAverageOfSubtree {
         node.left = node2;
         node.right = node3;
         node1.right=node4;
-        averageOfSubtree(root);
+        System.out.println( averageOfSubtree(root));
 
     }
     public static int averageOfSubtree(TreeNode root) {
