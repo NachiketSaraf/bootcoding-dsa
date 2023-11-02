@@ -61,7 +61,7 @@ public class CountNodesEqualToAverageOfSubtree {
         int totalSum = sum(root, count);
         int avg =totalSum / count[0];
 
-        if ( == root.val) {
+        if (avg == root.val) {
             result[0]++;
         }
 
