@@ -17,6 +17,7 @@ public class CountNodesEqualToAverageOfSubtree {
         node.right = node3;
         node1.right=node4;
         System.out.println( averageOfSubtree(root));
+        System.out.println( averageOfSubtreeBruteForce(root));
 
     }
 
@@ -44,5 +45,39 @@ public class CountNodesEqualToAverageOfSubtree {
 
     }
 
+    // O(n^2)
+    public static int averageOfSubtreeBruteForce(TreeNode root) {
+        int[] result = new int[1];
+        solve(root,result);
+        return result[0];
+    }
+
+    private static void solve(TreeNode root, int[] result) {
+        if (root == null) {
+            return;
+        }
+
+        int[] count = {0};
+        int totalSum = sum(root, count);
+
+        if (totalSum / count[0] == root.val) {
+            result[0]++;
+        }
+
+        solve(root.left,result);
+        solve(root.right,result);
+    }
+    private static int sum(TreeNode root, int[] count) {
+        if (root == null) {
+            return 0;
+        }
+
+        count[0]++;
+
+        int leftSum = sum(root.left, count);
+        int rightSum = sum(root.right, count);
+
+        return leftSum + rightSum + root.val;
+    }
 
 }
