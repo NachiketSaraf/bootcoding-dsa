@@ -26,7 +26,7 @@ public class CountNodesEqualToAverageOfSubtree {
     }
 
     private static int[] findSum(TreeNode root, int[] result) {
-        if (root== null) return new int[]{0,0};
+        if (root == null) return new int[]{0,0};
 
         int[] left = findSum(root.left,result);
         int[] right = findSum(root.right,result);
@@ -38,7 +38,7 @@ public class CountNodesEqualToAverageOfSubtree {
 
         if (avg == root.val) result[0]++;
 
-        return findSum(root,result);
+        return new int[]{totalSum,totalCount};
 
     }
 }
