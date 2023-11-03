@@ -10,6 +10,7 @@ public class BuildAnArrayWithStackOperations {
         List<String> ans = buildArray(target,n);
         //print array using stream
         ans.stream().forEach(System.out::println);
+
     }
     public static List<String> buildArray(int[] target, int n) {
         int stream = 1;
