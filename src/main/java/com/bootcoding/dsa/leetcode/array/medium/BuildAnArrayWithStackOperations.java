@@ -8,6 +8,7 @@ public class BuildAnArrayWithStackOperations {
         int[] target = {1,3};
         int n = 3;
         List<String> ans = buildArray(target,n);
+        //print array using stream
         ans.stream().forEach(System.out::println);
     }
     public static List<String> buildArray(int[] target, int n) {
