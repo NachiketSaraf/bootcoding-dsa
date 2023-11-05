@@ -1,6 +1,11 @@
 package com.bootcoding.dsa.leetcode.array.medium;
 
+import java.util.Arrays;
+
 public class FindTheWinnerOfAnArrayGame {
+    public static void main(String[] args) {
+
+    }
     public int getWinner(int[] arr, int k) {
         int n =arr.length;
         int max = Arrays.stream(arr).max().getAsInt();
