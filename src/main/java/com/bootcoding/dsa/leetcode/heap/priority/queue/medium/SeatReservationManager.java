@@ -13,6 +13,7 @@ public class SeatReservationManager {
         int seatNumber = 5;
         SeatManager seatManager = new SeatManager(5);
         int param_1 = seatManager.reserve();
+        System.out.println(param_1);
         seatManager.unreserve(seatNumber);
     }
 }
