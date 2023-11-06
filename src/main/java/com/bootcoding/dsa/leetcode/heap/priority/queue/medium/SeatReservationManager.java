@@ -10,6 +10,7 @@ public class SeatReservationManager {
      * obj.unreserve(seatNumber);
      */
     public static void main(String[] args) {
+        int seatNumber = 5;
         SeatManager seatManager = new SeatManager(5);
         int param_1 = seatManager.reserve();
         seatManager.unreserve(seatNumber);
