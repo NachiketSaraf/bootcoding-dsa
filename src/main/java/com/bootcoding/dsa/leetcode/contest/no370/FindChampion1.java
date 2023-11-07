@@ -15,7 +15,7 @@ public class FindChampion1 {
         for (int i = 0; i < n; i++) {
             boolean isChampion = true;
             for (int j = 0; j < n; j++) {
-                if (i != j && grid[i][j] == 1) {
+                if (i != j && grid[j][i] == 1) {
                     // Team i is weaker than team j, so it's not the champion
                     isChampion = false;
                     break;
