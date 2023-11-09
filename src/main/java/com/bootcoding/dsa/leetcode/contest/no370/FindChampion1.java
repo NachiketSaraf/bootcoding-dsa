@@ -7,6 +7,7 @@ public class FindChampion1 {
                 {0,1},
                 {0,0}
         };
+
         System.out.println(findChampion(grid));
     }
     public static int findChampion(int[][] grid) {
