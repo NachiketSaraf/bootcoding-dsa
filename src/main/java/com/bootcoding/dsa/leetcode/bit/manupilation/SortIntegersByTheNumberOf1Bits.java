@@ -21,8 +21,6 @@ public class SortIntegersByTheNumberOf1Bits {
 //            boxedArr[i] = arr[i];
 //        }
 
-
-
         Arrays.sort(boxedArr, (a, b) -> {
             int countA = Integer.bitCount(a);
             int countB = Integer.bitCount(b);
