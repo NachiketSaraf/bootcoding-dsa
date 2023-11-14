@@ -10,12 +10,12 @@ public class SortIntegersByTheNumberOf1Bits {
         }
     }
     public static int[] sortByBits(int[] arr) {
-        // Using stream to copy a array and change from primitive to Wrapper class
+        // Using stream to copy an array and change from primitive to Wrapper class
         Integer[] boxedArr =  Arrays.stream(arr)
                 .boxed()
                 .toArray(Integer[]::new);
 
-        //Normal way to copy a array
+        //Normal way to copy an array
 //        Integer[] boxedArr = new Integer[arr.length];
 //        for (int i = 0; i < arr.length; i++) {
 //            boxedArr[i] = arr[i];
