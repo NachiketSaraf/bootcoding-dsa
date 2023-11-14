@@ -11,6 +11,7 @@ public class CompareTheTriplets {
     }
     public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
 
+
         List<Integer> ans = new ArrayList<>();
 
         int aa = 0;
