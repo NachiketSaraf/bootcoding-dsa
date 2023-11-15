@@ -19,7 +19,8 @@ public class HeightOfTheTree {
 //        n3.left = n6;
 //        n3.right = n7;
 //        n4.left = n8;
-        System.out.println(height(root));
+        height(root);
+        System.out.println();
     }
     public static int height(TreeNode root) {
         if (root == null) return 0;
