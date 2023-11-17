@@ -43,7 +43,7 @@ public class OnlyLeft {
         if (root == null){
             return;
         }
-        if (root.left) {
+        if (root.left != null) {
             printLeft(root.left);
             System.out.println(root.data);
         }
