@@ -2,7 +2,7 @@ package com.bootcoding.dsa.gfg;
 
 public class ArmstrongNumbers {
     public static void main(String[] args) {
-        armstrongNumber(123);
+        System.out.println(armstrongNumber(123));
     }
     public static String armstrongNumber(int n){
         int rem = 0;
