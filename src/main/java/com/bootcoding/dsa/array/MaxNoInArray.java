@@ -13,7 +13,7 @@ public class MaxNoInArray {
             int number = sc.nextInt();
             numbers[i]=number;
         }
-       int m = maxOfArray(numbers);
+        int m = maxOfArray(numbers);
         System.out.println(maxOfArray(numbers));
     }
     private static int maxOfArray(int[] numbers){
