@@ -14,7 +14,7 @@ public class MaxNoInArray {
             numbers[i]=number;
         }
        int m = maxOfArray(numbers);
-        System.out.println(m);
+        System.out.println(maxOfArray(numbers));
     }
     private static int maxOfArray(int[] numbers){
         System.out.println("Maximum");
