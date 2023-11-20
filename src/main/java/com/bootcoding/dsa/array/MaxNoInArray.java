@@ -2,7 +2,7 @@ package com.bootcoding.dsa.array;
 
 import java.util.Scanner;
 
-public class MaxNoInArrray {
+public class MaxNoInArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter array size ");
