@@ -1,13 +1,14 @@
 package com.bootcoding.dsa.leetcode.array.medium;
 
 public class CountNicePairsInAnArray {
+    public static void main(String[] args) {
 
+    }
     public int countNicePairs(int[] nums) {
         int[] arr = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
             arr[i] = nums[i] - rev(nums[i]);
         }
-
         Map<Integer, Integer> dic = new HashMap();
         int ans = 0;
         int MOD = (int) 1e9 + 7;
