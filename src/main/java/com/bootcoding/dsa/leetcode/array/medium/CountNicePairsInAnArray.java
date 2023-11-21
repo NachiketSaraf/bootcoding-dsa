@@ -1,5 +1,8 @@
 package com.bootcoding.dsa.leetcode.array.medium;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CountNicePairsInAnArray {
     public static void main(String[] args) {
 
