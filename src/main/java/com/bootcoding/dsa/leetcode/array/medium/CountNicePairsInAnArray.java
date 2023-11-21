@@ -11,7 +11,7 @@ public class CountNicePairsInAnArray {
     public static int countNicePairs(int[] nums) {
         int[] arr = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            arr[i] = nums[i] - re(nums[i]);
+            arr[i] = nums[i] - rev(nums[i]);
         }
         Map<Integer, Integer> dic = new HashMap();
         int ans = 0;
