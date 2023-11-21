@@ -6,9 +6,9 @@ import java.util.Map;
 public class CountNicePairsInAnArray {
     public static void main(String[] args) {
         int[] nums ={42, 11, 1, 97};
-
+        countNicePairs(nums);
     }
-    public int countNicePairs(int[] nums) {
+    public static int countNicePairs(int[] nums) {
         int[] arr = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
             arr[i] = nums[i] - rev(nums[i]);
