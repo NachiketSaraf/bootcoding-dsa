@@ -11,7 +11,7 @@ public class CountNicePairsInAnArray {
     public static int countNicePairs(int[] nums) {
         int[] arr = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            arr[i] = nums[i] - rev(nums[i]);
+            arr[i] = nums[i] - re(nums[i]);
         }
         Map<Integer, Integer> dic = new HashMap();
         int ans = 0;
@@ -23,8 +23,7 @@ public class CountNicePairsInAnArray {
 
         return ans;
     }
-
-    public int rev(int num) {
+    public static int rev(int num) {
         int result = 0;
         while (num > 0) {
             result = result * 10 + num % 10;
