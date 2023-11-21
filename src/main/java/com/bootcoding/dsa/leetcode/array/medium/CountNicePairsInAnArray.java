@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class CountNicePairsInAnArray {
     public static void main(String[] args) {
+        int[] nums ={42, 11, 1, 97};
 
     }
     public int countNicePairs(int[] nums) {
