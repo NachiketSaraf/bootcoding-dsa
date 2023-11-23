@@ -8,7 +8,7 @@ public class RemoveOuterParentheses {
         System.out.println(removeOuterParentheses(s));
     }
     public static String removeOuterParentheses(String s) {
-        Stack<Character> st = new Stack<>();
+        Stack<Character> stack = new Stack<>();
         StringBuilder stringBuilder =new StringBuilder();
         for (int i= 0; i<s.length();i++){
 
