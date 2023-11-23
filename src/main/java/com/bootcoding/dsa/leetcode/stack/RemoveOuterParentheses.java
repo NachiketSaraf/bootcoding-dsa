@@ -19,7 +19,7 @@ public class RemoveOuterParentheses {
                     stack.push(s.charAt(i));
             }else {
                 stack.pop();
-                if (st.size()>0){
+                if (stack.size()>0){
                     stringBuilder.append(s.charAt(i));
                 }
             }
