@@ -13,7 +13,7 @@ public class RemoveOuterParentheses {
         for (int i= 0; i<s.length();i++){
 
             if (s.charAt(i) =='('){
-                if (st.size()>0){
+                if (stack.size()>0){
                     stringBuilder.append(s.charAt(i));
                 }
                     st.push(s.charAt(i));
