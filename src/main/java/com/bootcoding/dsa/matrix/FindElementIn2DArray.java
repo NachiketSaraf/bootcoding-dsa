@@ -7,7 +7,7 @@ public class FindElementIn2DArray {
         arr[0][2] = 2;
         arr[1][0] = 4; arr[1][1] = 5; arr[1][2] = 6;
         arr[2][0] = 7; arr[2][1] = 8; arr[2][2] = 9;
-        findElement(arr,3);
+        findElement(arr,1);
     }
 
     private static void findElement(int[][] arr,int val) {
