@@ -19,9 +19,7 @@ public class TwoSum {
                 a[1] = i;
                 return a;
             }
-            else {
-                ind.put(nums[i],i);
-            }
+            else ind.put(nums[i], i);
         }
 
         return a;
