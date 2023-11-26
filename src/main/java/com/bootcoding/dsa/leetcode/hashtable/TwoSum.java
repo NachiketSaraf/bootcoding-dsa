@@ -11,17 +11,17 @@ public class TwoSum {
         }
     }
     public static int[] twoSum(int[] nums, int target) {
-        int[] a = new int[2];
+        int[] ans = new int[2];
         HashMap<Integer,Integer> ind = new  HashMap<>();
         for (int i = 0; i < nums.length;i++ ){
             if (ind.containsKey(target-nums[i])){
-                a[0] = ind.get(target-nums[i]);
-                a[1] = i;
-                return a;
+                ans[0] = ind.get(target-nums[i]);
+                ans[1] = i;
+                return ans;
             }
             else ind.put(nums[i], i);
         }
 
-        return a;
+        return ans;
     }
 }
