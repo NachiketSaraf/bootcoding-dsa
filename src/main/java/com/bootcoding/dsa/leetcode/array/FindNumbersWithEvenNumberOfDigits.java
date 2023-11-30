@@ -2,7 +2,6 @@ package com.bootcoding.dsa.leetcode.array;
 
 public class FindNumbersWithEvenNumberOfDigits {
     public static void main(String[] args) {
-        int[] nums = {12,345,2,6,7896};
         System.out.println(findNumbers(new int[]{12,345,2,6,7896}));
     } public static int findNumbers(int[] nums) {
         int evenCounter = 0 ;
