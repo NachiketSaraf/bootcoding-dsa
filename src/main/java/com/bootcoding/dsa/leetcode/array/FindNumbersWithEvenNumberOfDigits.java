@@ -4,8 +4,7 @@ public class FindNumbersWithEvenNumberOfDigits {
     public static void main(String[] args) {
         int[] nums = {12,345,2,6,7896};
         int ec = findNumbers(nums);
-        System.out.println(ec);
-
+        System.out.println(findNumbers(nums));
     } public static int findNumbers(int[] nums) {
         int evenCounter = 0 ;
         int div;
