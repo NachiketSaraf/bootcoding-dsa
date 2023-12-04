@@ -1,7 +1,9 @@
 package com.bootcoding.dsa.leetcode.array;
 
 public class Largest3SameDigitNumberInString {
+    public static void main(String[] args) {
 
+    }
     public String largestGoodInteger(String num) {
         char maxDigit = '\0';
         for (int index = 0; index <= num.length() - 3; ++index) {
