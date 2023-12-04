@@ -5,7 +5,7 @@ public class Largest3SameDigitNumberInString {
         String num = "6777133339";
 
     }
-    public String largestGoodInteger(String num) {
+    public static String largestGoodInteger(String num) {
         char maxDigit = '\0';
         for (int index = 0; index <= num.length() - 3; ++index) {
             if (num.charAt(index) == num.charAt(index + 1) && num.charAt(index) == num.charAt(index + 2)) {
