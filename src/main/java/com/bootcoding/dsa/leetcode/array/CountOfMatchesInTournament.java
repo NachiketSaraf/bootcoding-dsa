@@ -4,7 +4,7 @@ public class CountOfMatchesInTournament {
     public static void main(String[] args) {
 
     }
-    public int numberOfMatches(int n) {
+    public static int numberOfMatches(int n) {
         int ans = 0;
         while (n > 1) {
             if (n % 2 == 0) {
