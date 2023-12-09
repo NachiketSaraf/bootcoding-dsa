@@ -1,8 +1,13 @@
 package com.bootcoding.dsa.sort;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.stream.Stream;
+
 public class BubbleSort {
     public static void main(String[] args) {
         int[] s = sortBubble(new int[]{50,17,19,14,5});
+        Arrays.stream(s).forEach(System.out::println);
         for (int b : s) System.out.println(b);
     }
     private static int[] sortBubble(int[] num) {
