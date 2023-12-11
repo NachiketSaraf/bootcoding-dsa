@@ -3,8 +3,9 @@ package com.bootcoding.dsa.leetcode.matrix;
 public class TransposeMatrix {
     public static void main(String[] args) {
         int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
+        transpose(arr);
     }
-    public int[][] transpose(int[][] matrix) {
+    public static int[][] transpose(int[][] matrix) {
         int row = matrix.length;
         int col = matrix[0].length;
 
