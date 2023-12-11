@@ -7,9 +7,10 @@ public class TransposeMatrix {
         int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
         transpose(arr);
         for (int[] a: arr){
-            for (int n :a){
-                System.out.println(n);
+            for (int n :a) {
+                System.out.print(n);
             }
+            System.out.println();
         }
     }
     public static int[][] transpose(int[][] matrix) {
