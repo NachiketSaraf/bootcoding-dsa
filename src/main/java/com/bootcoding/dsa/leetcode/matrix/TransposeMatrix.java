@@ -1,6 +1,9 @@
 package com.bootcoding.dsa.leetcode.matrix;
 
 public class TransposeMatrix {
+    public static void main(String[] args) {
+
+    }
     public int[][] transpose(int[][] matrix) {
         int row = matrix.length;
         int col = matrix[0].length;
