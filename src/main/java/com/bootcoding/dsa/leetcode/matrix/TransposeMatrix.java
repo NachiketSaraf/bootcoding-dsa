@@ -6,7 +6,11 @@ public class TransposeMatrix {
     public static void main(String[] args) {
         int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
         transpose(arr);
-        for ()
+        for (int[] a: arr){
+            for (int n :a){
+                System.out.println(n);
+            }
+        }
     }
     public static int[][] transpose(int[][] matrix) {
         int row = matrix.length;
