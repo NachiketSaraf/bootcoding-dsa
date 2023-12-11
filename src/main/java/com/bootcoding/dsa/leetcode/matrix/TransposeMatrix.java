@@ -1,9 +1,12 @@
 package com.bootcoding.dsa.leetcode.matrix;
 
+import java.util.Arrays;
+
 public class TransposeMatrix {
     public static void main(String[] args) {
         int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
-        System.out.println(transpose(arr));
+        transpose(arr);
+        for ()
     }
     public static int[][] transpose(int[][] matrix) {
         int row = matrix.length;
