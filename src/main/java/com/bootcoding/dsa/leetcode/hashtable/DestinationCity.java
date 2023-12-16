@@ -1,8 +1,11 @@
 package com.bootcoding.dsa.leetcode.hashtable;
 
+import java.util.List;
+
 public class DestinationCity {
     public static void main(String[] args) {
-        String[][] paths = {{"London","New York"},{"New York","Lima"},{"Lima","Sao Paulo"}};
+        List<List<String>> paths = {{"London","New York"},{"New York","Lima"},{"Lima","Sao Paulo"}};
+        System.out.println(destCity(paths));
     }
     public static String destCity(List<List<String>> paths) {
         Set<String> set = new HashSet();
