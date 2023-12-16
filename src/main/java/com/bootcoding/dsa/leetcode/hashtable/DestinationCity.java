@@ -4,8 +4,11 @@ import java.util.*;
 
 public class DestinationCity {
     public static void main(String[] args) {
-        List<List<String>> paths = {{"London","New York"},{"New York","Lima"},{"Lima","Sao Paulo"}};
-        System.out.println(destCity(paths));
+        List<List<String>> paths = new ArrayList<>();
+        List<Integer> innerList = new ArrayList<>();
+
+        innerList.add(0,"London","New York");
+        System.out.println(destCity(paths);
     }
     public static String destCity(List<List<String>> paths) {
         Set<String> set = new HashSet();
