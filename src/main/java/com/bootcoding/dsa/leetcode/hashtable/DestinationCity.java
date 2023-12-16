@@ -2,7 +2,7 @@ package com.bootcoding.dsa.leetcode.hashtable;
 
 public class DestinationCity {
     public static void main(String[] args) {
-
+        String[][] paths = {{"London","New York"},{"New York","Lima"},{"Lima","Sao Paulo"}};
     }
     public String destCity(List<List<String>> paths) {
         Set<String> set = new HashSet();
