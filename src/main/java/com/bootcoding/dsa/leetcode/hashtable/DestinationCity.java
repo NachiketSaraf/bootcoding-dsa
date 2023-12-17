@@ -8,7 +8,9 @@ public class DestinationCity {
         List<String> innerList = new ArrayList<>();
 
         innerList.add(0,"London , New York");
-        System.out.println(destCity(paths);
+        innerList.add(1,"New York , Lima");
+        innerList.add(2,"London , New York");
+        System.out.println(destCity(paths));
     }
     public static String destCity(List<List<String>> paths) {
         Set<String> set = new HashSet();
