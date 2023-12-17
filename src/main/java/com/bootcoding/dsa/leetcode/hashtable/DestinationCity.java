@@ -10,6 +10,8 @@ public class DestinationCity {
         innerList.add(0,"London , New York");
         innerList.add(1,"New York , Lima");
         innerList.add(2,"Lima , Sao Paulo");
+
+        paths.add(innerList);
         System.out.println(destCity(paths));
     }
     public static String destCity(List<List<String>> paths) {
