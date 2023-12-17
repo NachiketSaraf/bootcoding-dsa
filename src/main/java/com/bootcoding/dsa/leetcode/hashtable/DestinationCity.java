@@ -5,9 +5,9 @@ import java.util.*;
 public class DestinationCity {
     public static void main(String[] args) {
         List<List<String>> paths = new ArrayList<>();
-        List<Integer> innerList = new ArrayList<>();
+        List<String> innerList = new ArrayList<>();
 
-        innerList.add(0,"London","New York");
+        innerList.add(0,"London , New York");
         System.out.println(destCity(paths);
     }
     public static String destCity(List<List<String>> paths) {
