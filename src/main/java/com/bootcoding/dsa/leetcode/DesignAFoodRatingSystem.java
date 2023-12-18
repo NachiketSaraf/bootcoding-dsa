@@ -1,5 +1,5 @@
 package com.bootcoding.dsa.leetcode;
-
+import java.util.*;
 public class DesignAFoodRatingSystem {
     public static void main(String[] args) {
 
