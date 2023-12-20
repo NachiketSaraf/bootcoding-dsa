@@ -2,7 +2,10 @@ package com.bootcoding.dsa.leetcode.matrix;
 
 public class ImageSmoother {
     public static void main(String[] args) {
-
+        int[][] img = new int[3][3];
+        img[0][0] =100;img[0][1] =200;img[0][2] =100;
+        img[1][0] =200;img[1][1] =50;img[1][2] =200;
+        img[2][0] =100;img[2][1] =200;img[2][2] =100;
     }
     private static final int[][] directions = {
             {-1, -1}, {-1, 0}, {-1, 1},
