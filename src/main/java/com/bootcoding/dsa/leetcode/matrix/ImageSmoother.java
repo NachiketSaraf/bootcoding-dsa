@@ -6,7 +6,13 @@ public class ImageSmoother {
         image[0][0] =100;image[0][1] =200;image[0][2] =100;
         image[1][0] =200;image[1][1] =50;image[1][2] =200;
         image[2][0] =100;image[2][1] =200;image[2][2] =100;
-        imageSmoother(image);
+        int[][] img = imageSmoother(image);
+        for (int[] i:img) {
+            for (int n:i) {
+                System.out.print(n+" ");
+            }
+            System.out.println();
+        }
     }
     private static final int[][] directions = {
             {-1, -1}, {-1, 0}, {-1, 1},
