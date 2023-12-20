@@ -13,7 +13,7 @@ public class ImageSmoother {
             {1, -1}, {1, 0}, {1, 1}
     };
 
-    public int[][] imageSmoother(int[][] image) {
+    public static int[][] imageSmoother(int[][] image) {
         int m = image.length;
         int n = image[0].length;
 
