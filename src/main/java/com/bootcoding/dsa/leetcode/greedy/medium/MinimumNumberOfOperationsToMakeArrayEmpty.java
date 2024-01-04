@@ -14,15 +14,13 @@ public class MinimumNumberOfOperationsToMakeArrayEmpty {
         for(int n : nums){
             freq.put(n,freq.getOrDefault(n,0)+1);
         }
-        for(int v:freq.values()){
-            if(v%3==0){
-                count += v/3;
-            }else if(v%2==0){
-                count += v/2;
-            }  else{
+        for(int f:freq.values()){
+            if (f == 1) {
                 return -1;
             }
+            count += Math.ceil((double) f / 3);
         }
         return count;
+
     }
 }
