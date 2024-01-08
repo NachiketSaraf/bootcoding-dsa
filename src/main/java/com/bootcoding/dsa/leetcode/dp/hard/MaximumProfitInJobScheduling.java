@@ -10,8 +10,8 @@ public class MaximumProfitInJobScheduling {
         int[] profit = {50,10,40,70};
 
     }
-    private int[] memo;
-    private int n;
+    private static int[] memo;
+    private static int n;
 
     private static int getNextIndex(int[][] array, int l, int currentJobEnd) {
         int r = n - 1;
