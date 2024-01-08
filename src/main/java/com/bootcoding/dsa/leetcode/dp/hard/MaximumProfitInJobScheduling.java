@@ -8,7 +8,7 @@ public class MaximumProfitInJobScheduling {
         int[] startTime = {1,2,3,3};
         int[] endTime = {3, 4, 5, 6};
         int[] profit = {50,10,40,70};
-        jobScheduling(startTime,endTime,profit);
+        System.out.println(jobScheduling(startTime,endTime,profit));
     }
     private static int[] memo;
     private static int n;
