@@ -5,6 +5,9 @@ import java.util.Comparator;
 
 public class MaximumProfitInJobScheduling {
     public static void main(String[] args) {
+        int[] startTime = {1,2,3,3};
+        int[] endTime = {3, 4, 5, 6};
+        int[] profit = {50,10,40,70};
 
     }
     private int[] memo;
