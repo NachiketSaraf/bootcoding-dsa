@@ -8,7 +8,7 @@ public class MaximumProfitInJobScheduling {
         int[] startTime = {1,2,3,3};
         int[] endTime = {3, 4, 5, 6};
         int[] profit = {50,10,40,70};
-
+        jobSchedulin
     }
     private static int[] memo;
     private static int n;
@@ -31,7 +31,7 @@ public class MaximumProfitInJobScheduling {
         return result;
     }
 
-    private int solve(int[][] array, int i) {
+    private static int solve(int[][] array, int i) {
         if (i >= n)
             return 0;
 
