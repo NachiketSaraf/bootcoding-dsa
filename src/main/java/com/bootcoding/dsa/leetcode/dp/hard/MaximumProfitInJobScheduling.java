@@ -13,7 +13,7 @@ public class MaximumProfitInJobScheduling {
     private int[] memo;
     private int n;
 
-    private int getNextIndex(int[][] array, int l, int currentJobEnd) {
+    private static int getNextIndex(int[][] array, int l, int currentJobEnd) {
         int r = n - 1;
         int result = n + 1;
 
