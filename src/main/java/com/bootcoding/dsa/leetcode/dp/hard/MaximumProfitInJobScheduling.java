@@ -46,7 +46,7 @@ public class MaximumProfitInJobScheduling {
         return memo[i] = Math.max(taken, notTaken);
     }
 
-    public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
+    public static int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
         n = startTime.length;
 
         memo = new int[n];
