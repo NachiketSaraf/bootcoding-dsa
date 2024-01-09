@@ -14,7 +14,7 @@ public class LeafSimilarTrees {
         TreeNode n7 = new TreeNode(7);
         TreeNode n8 = new TreeNode(4);
 
-        leafSimilar(root,root);
+        System.out.println(leafSimilar(root,root));
     }
     public static boolean leafSimilar(TreeNode root1, TreeNode root2) {
         List<Integer> firstTreeLeaves = new ArrayList<>();
