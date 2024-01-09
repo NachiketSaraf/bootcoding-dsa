@@ -1,5 +1,6 @@
 package com.bootcoding.dsa.leetcode.binerytree;
 
+import java.util.*;
 public class LeafSimilarTrees {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
         List<Integer> firstTreeLeaves = new ArrayList<>();
