@@ -3,6 +3,9 @@ package com.bootcoding.dsa.leetcode.binerytree.medium;
 import com.bootcoding.dsa.leetcode.binerytree.TreeNode;
 
 public class AmountOfTimeForBinaryTreeToBeInfected {
+    public static void main(String[] args) {
+
+    }
     private int maxDistance = 0;
     public int amountOfTime(TreeNode root, int start) {
         traverse(root, start);
