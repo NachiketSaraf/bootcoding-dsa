@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class DetermineIfStringHalvesAreAlike {
     public static void main(String[] args) {
-        halvesAreAlike("textbook");
+        System.out.println(halvesAreAlike("textbook"));
     }
     public static boolean halvesAreAlike(String s) {
         int aCount = 0;
