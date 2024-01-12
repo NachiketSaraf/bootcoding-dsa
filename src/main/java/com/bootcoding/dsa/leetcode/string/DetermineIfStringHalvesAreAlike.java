@@ -7,7 +7,7 @@ public class DetermineIfStringHalvesAreAlike {
     public static void main(String[] args) {
 
     }
-    public boolean halvesAreAlike(String s) {
+    public static boolean halvesAreAlike(String s) {
         int aCount = 0;
         int bCount = 0;
 
