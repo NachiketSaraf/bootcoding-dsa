@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class DetermineIfStringHalvesAreAlike {
+    public static void main(String[] args) {
+
+    }
     public boolean halvesAreAlike(String s) {
         int aCount = 0;
         int bCount = 0;
