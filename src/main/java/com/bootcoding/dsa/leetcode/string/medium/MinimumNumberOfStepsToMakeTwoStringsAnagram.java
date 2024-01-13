@@ -4,7 +4,7 @@ public class MinimumNumberOfStepsToMakeTwoStringsAnagram {
     public static void main(String[] args) {
         String s = "bab";
         String t = "aba";
-        minSteps(s,t);
+        System.out.println(minSteps(s,t));
     }
     public static int minSteps(String s, String t) {
         int[] count = new int[26];
