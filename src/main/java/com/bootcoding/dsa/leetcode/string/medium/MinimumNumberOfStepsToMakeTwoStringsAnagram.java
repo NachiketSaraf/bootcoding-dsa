@@ -2,8 +2,8 @@ package com.bootcoding.dsa.leetcode.string.medium;
 
 public class MinimumNumberOfStepsToMakeTwoStringsAnagram {
     public static void main(String[] args) {
-        String s = "bab";
-        String t = "aba";
+        String s = "leetcode";
+        String t = "practice";
         System.out.println(minSteps(s,t));
     }
     public static int minSteps(String s, String t) {
