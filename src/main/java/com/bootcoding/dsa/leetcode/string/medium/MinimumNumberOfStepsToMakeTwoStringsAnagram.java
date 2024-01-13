@@ -4,9 +4,9 @@ public class MinimumNumberOfStepsToMakeTwoStringsAnagram {
     public static void main(String[] args) {
         String s = "bab";
         String t = "aba";
-
+        minSteps(s,t);
     }
-    public int minSteps(String s, String t) {
+    public static int minSteps(String s, String t) {
         int[] count = new int[26];
         // Storing the difference of frequencies of characters in t and s.
         for (int i = 0; i < s.length(); i++) {
