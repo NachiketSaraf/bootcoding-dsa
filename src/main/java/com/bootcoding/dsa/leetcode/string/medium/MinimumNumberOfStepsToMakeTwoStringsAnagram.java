@@ -1,6 +1,11 @@
 package com.bootcoding.dsa.leetcode.string.medium;
 
 public class MinimumNumberOfStepsToMakeTwoStringsAnagram {
+    public static void main(String[] args) {
+        String s = "bab";
+        String t = "aba";
+
+    }
     public int minSteps(String s, String t) {
         int[] count = new int[26];
         // Storing the difference of frequencies of characters in t and s.
