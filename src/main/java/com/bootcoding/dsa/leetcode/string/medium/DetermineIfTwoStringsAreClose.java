@@ -5,7 +5,7 @@ public class DetermineIfTwoStringsAreClose {
 
     }
 
-    public boolean closeStrings(String word1, String word2) {
+    public static boolean closeStrings(String word1, String word2) {
         int[] freq1 = new int[26];
         int[] freq2 = new int[26];
 
