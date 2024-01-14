@@ -1,6 +1,10 @@
 package com.bootcoding.dsa.leetcode.string.medium;
 
 public class DetermineIfTwoStringsAreClose {
+    public static void main(String[] args) {
+
+    }
+
     public boolean closeStrings(String word1, String word2) {
         int[] freq1 = new int[26];
         int[] freq2 = new int[26];
@@ -29,4 +33,5 @@ public class DetermineIfTwoStringsAreClose {
         }
 
         return true;
+    }
 }
