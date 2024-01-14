@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class DetermineIfTwoStringsAreClose {
     public static void main(String[] args) {
-        closeStrings("abc","bca");
+        System.out.println(closeStrings("abc","bca"));
     }
 
     public static boolean closeStrings(String word1, String word2) {
