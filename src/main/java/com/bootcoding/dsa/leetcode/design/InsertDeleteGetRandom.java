@@ -7,7 +7,7 @@ public class InsertDeleteGetRandom {
     private List<Integer> listOfNumbers;
     private Random rn;
 
-    public RandomizedSet() {
+    public void RandomizedSet() {
         this.map = new HashMap<Integer, Integer>();
         this.listOfNumbers = new ArrayList<Integer>();
         this.rn = new Random();
