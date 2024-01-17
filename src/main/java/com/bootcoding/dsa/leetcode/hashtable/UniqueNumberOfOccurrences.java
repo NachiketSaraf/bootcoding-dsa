@@ -20,7 +20,7 @@ public class UniqueNumberOfOccurrences {
 
         return freq.size() == check.size();
     }
-    public boolean uniqueOccurrences(int[] arr) {
+    public boolean uniqueOccurrencesIfElse(int[] arr) {
         Map<Integer,Integer> freq = new HashMap<>();
 
         for (int n:arr) {
