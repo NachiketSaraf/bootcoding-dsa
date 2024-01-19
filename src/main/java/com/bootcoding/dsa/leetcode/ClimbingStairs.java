@@ -8,6 +8,7 @@ public class ClimbingStairs {
         System.out.println(climbStairs(3));
         System.out.println("Time "+(System.currentTimeMillis()-start));
     }
+
     static HashMap<Integer, Integer> cache = new HashMap<>();
     public static int climbStairs(int n) {
         if(n==0 || n==1) return 1;
