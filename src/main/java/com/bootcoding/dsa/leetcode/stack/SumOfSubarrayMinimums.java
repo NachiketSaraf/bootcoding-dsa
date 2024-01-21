@@ -8,10 +8,10 @@ public class SumOfSubarrayMinimums {
     public int sumSubarrayMins(int[] arr) {
         int length = arr.length;
         int[] leftArr = new int[length];
-        int[] right = new int[length];
+        int[] rightArr = new int[length];
 
         Arrays.fill(leftArr, -1);
-        Arrays.fill(right, length);
+        Arrays.fill(rightArrArr, length);
 
         Deque<Integer> stack = new ArrayDeque<>();
 
@@ -32,7 +32,7 @@ public class SumOfSubarrayMinimums {
                 stack.pop();
             }
             if (!stack.isEmpty()) {
-                right[i] = stack.peek();
+                rightArr[i] = stack.peek();
             }
             stack.push(i);
         }
@@ -41,7 +41,7 @@ public class SumOfSubarrayMinimums {
         long answer = 0;
 
         for (int i = 0; i < length; ++i) {
-            answer += (long) (i - leftArr[i]) * (right[i] - i) % mod * arr[i] % mod;
+            answer += (long) (i - leftArr[i]) * (rightArr[i] - i) % mod * arr[i] % mod;
             answer %= mod;
         }
 
