@@ -1,7 +1,9 @@
 package com.bootcoding.dsa.leetcode.greedy.medium;
 
+import java.util.*;
 public class DivideArrayIntoArraysWithMaxDifference {
-       Arrays.sort(nums);
+
+    Arrays.sort(nums);
     int[][] ans = new int[nums.length / 3][3];
         for (int i = 0; i < nums.length; i += 3) {
         if (nums[i + 2] - nums[i] > k) {
