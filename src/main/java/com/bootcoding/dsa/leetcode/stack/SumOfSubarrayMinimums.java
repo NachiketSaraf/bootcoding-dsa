@@ -11,6 +11,7 @@ public class SumOfSubarrayMinimums {
         int[] rightArr = new int[length];
 
         Arrays.fill(leftArr, -1);
+        long[] rightArrArr = new long[0];
         Arrays.fill(rightArrArr, length);
 
         Deque<Integer> stack = new ArrayDeque<>();
