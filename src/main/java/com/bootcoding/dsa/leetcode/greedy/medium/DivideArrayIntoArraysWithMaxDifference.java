@@ -4,9 +4,10 @@ import java.util.*;
 public class DivideArrayIntoArraysWithMaxDifference {
     public static void main(String[] args) {
         int[] nums = {1,3,4,8,7,9,3,5,1};
+        divideArray(nums,2);
     }
 
-    public int[][] divideArray(int[] nums, int k) {
+    public static int[][] divideArray(int[] nums, int k) {
         Arrays.sort(nums);
         int[][] ans = new int[nums.length / 3][3];
         for (int i = 0; i < nums.length; i += 3) {
