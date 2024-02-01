@@ -3,7 +3,7 @@ package com.bootcoding.dsa.leetcode.greedy.medium;
 import java.util.*;
 public class DivideArrayIntoArraysWithMaxDifference {
     public static void main(String[] args) {
-
+        int[] nums = {1,3,4,8,7,9,3,5,1};
     }
 
     public int[][] divideArray(int[] nums, int k) {
