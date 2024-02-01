@@ -2,6 +2,9 @@ package com.bootcoding.dsa.leetcode.greedy.medium;
 
 import java.util.*;
 public class DivideArrayIntoArraysWithMaxDifference {
+    public static void main(String[] args) {
+
+    }
 
     public int[][] divideArray(int[] nums, int k) {
         Arrays.sort(nums);
