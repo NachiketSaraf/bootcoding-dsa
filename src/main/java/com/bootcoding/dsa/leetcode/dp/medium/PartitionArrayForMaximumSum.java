@@ -29,7 +29,7 @@ public class PartitionArrayForMaximumSum {
         return dp[start] = ans;
     }
 
-    public int maxSumAfterPartitioning(int[] arr, int k) {
+    public static int maxSumAfterPartitioning(int[] arr, int k) {
         int[] dp = new int[arr.length];
         Arrays.fill(dp, -1);
 
