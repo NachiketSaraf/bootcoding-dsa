@@ -1,7 +1,10 @@
 package com.bootcoding.dsa.leetcode.dp.medium;
 
 public class PartitionArrayForMaximumSum {
+    public static void main(String[] args) {
+        int[] arr = {1,15,7,9,2,5,10};
 
+    }
     private int maxSum(int[] arr, int k, int[] dp, int start) {
         int N = arr.length;
 
