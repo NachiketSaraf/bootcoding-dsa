@@ -3,7 +3,7 @@ package com.bootcoding.dsa.leetcode.array;
 import java.util.*;
 public class AssignCookies {
     public static void main(String[] args) {
-        System.out.println(findContentChildren(new int[]{1,2,3},new int[]{1,1}));
+        System.out.println(findContentChildren(new int[]{1,2,3,4,5,6,7,8,9},new int[]{1,1}));
     }
     public static int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
