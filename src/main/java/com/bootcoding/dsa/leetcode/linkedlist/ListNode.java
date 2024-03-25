@@ -1,12 +1,13 @@
 package com.bootcoding.dsa.leetcode.linkedlist;
 
-public class ListNode
-{
-      public int val;
-      public ListNode next;
-      public ListNode(int val){
+public class ListNode {
+    public int val;
+    public ListNode next;
 
-          this.val = val;
-      }
+    public ListNode(int val) {
+
+        this.val = val;
+        this.next = null;
+    }
 }
 
